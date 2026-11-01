@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барная карта — Dynasty Lounge</title>
+<meta name="description" content="Барная карта Dynasty Lounge: коктейли и напитки.">
+<meta property="og:title" content="Барная карта — Dynasty Lounge">
+<meta property="og:description" content="Барная карта Dynasty Lounge: коктейли и напитки.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#08060C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#08060C}
+a{color:#B394FF}a:hover{color:#CDB8FF}
+</style>
+<style>html{scroll-behavior:smooth}input,select,textarea,button{font:inherit}</style>
+</head>
+<body>
+<div id="app">
+
+<div style="width: 100%; min-height: 100vh; background: radial-gradient(60% 40% at 80% 0%, rgba(109,63,224,0.32), transparent 70%), #08060C; color: #F1EDF7; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="Dynasty Lounge — на главную" style="display: flex; flex-direction: column; line-height: 1; text-decoration: none; color: #F1EDF7"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.32em">DYNASTY</span><span style="margin-top: 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.62em; text-transform: uppercase; color: #B394FF">Lounge</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="food.html" style="border: 1px solid #3D2E55; color: #F1EDF7; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Кухня</a>
+<a href="index.html" style="background: #B394FF; color: #12091F; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Забронировать</a>
+</div>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px">
+<p style="display: flex; align-items: center; gap: 14px; margin: 0 0 20px; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #B394FF">Dynasty Lounge · 18+<span style="width: 48px; height: 1px; background: #6D3FE0"></span></p>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(52px, 9vw, 112px); line-height: 0.95; letter-spacing: -0.02em">Барная <em style="font-style: italic; color: #B394FF">карта</em></h1>
+<p style="margin: 28px 0 0; max-width: 620px; font-size: 19px; color: #C9C0D9">Шампанское и вино, коллекционный виски, коньяк, текила и ром, большой выбор японского: виски, сакэ, сётю и пиво. И авторские коктейли к кальяну.</p>
+<p style="margin: 20px 0 0; max-width: 620px; font-size: 14px; color: #9488A8">Алкоголь оплачивается отдельно и не входит в депозит VIP rooms и Premium room. Продаём только гостям старше 18 лет.</p>
+</section>
+
+<nav aria-label="Разделы барной карты" style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<a href="#sparkling" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Шампанское и игристое</a>
+
+<a href="#wine" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Вино</a>
+
+<a href="#whisky" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Виски</a>
+
+<a href="#japanese-whisky" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Японский виски</a>
+
+<a href="#cognac" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Коньяк и арманьяк</a>
+
+<a href="#agave" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Текила и мескаль</a>
+
+<a href="#rum" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Ром</a>
+
+<a href="#vodka" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Водка</a>
+
+<a href="#gin" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Джин</a>
+
+<a href="#sake" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Сакэ и сётю</a>
+
+<a href="#liqueurs" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Ликёры</a>
+
+<a href="#beer" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Японское пиво</a>
+
+<a href="#cocktails" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Коктейли</a>
+
+</nav>
+
+
+<section id="sparkling" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Шампанское и игристое</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Бокал 125 мл / бутылка 750 мл.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Абрау-Дюрсо Victor Dravigny Brut</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">850 / 4 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Россия · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Российское игристое классическим методом. Свежее, с нотами яблока и бриоши.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Mionetto Prosecco Brut</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 5 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Италия · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Лёгкое и фруктовое, груша и цитрус.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Moët &amp; Chandon Impérial Brut</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 900 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шампань · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Классика шампанского: зелёное яблоко, белые цветы, бриошь.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Veuve Clicquot Brut</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 200 / 16 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шампань · бокал / бутылка</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Хит</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Плотное и насыщенное, с нотами выпечки и спелых фруктов.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ruinart Blanc de Blancs</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">29 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шампань · бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Только шардоне. Цитрус, жасмин, тонкая минеральность.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Dom Pérignon</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">75 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шампань · винтаж · бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Легендарное винтажное шампанское для особого повода.</div>
+</div>
+
+</div>
+</section>
+
+<section id="wine" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Вино</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Бокал 150 мл / бутылка 750 мл.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Лефкадия Шардоне</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 000 / 5 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Россия, Кубань · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сливочное, с нотами груши и ванили.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Chablis, William Fèvre</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 400 / 8 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Бургундия · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сухое белое: цитрус, мел, устричная свежесть. Идеально к сашими.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Sancerre</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 500 / 8 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Луара · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Совиньон блан: крыжовник, цитрус, свежая трава.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Bourgogne Pinot Noir</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 500 / 8 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Бургундия · бокал / бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Лёгкое красное: вишня, малина, лесные ягоды.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Châteauneuf-du-Pape</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Долина Роны · бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Насыщенное красное: тёмные ягоды, специи, прованские травы.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Barolo</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">16 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Пьемонт · бутылка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Неббиоло: роза, вишня, табак и мощные танины.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Grace Koshu</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 600 / 9 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония, Яманаси · бокал / бутылка</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японский белый сорт косю: юдзу, белый персик, лёгкость. Отлично к сашими.</div>
+</div>
+
+</div>
+</section>
+
+<section id="whisky" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Виски</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Glenfiddich 15</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Спейсайд · односолодовый</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мёд, сухофрукты, мягкий хересный оттенок.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">The Macallan 12 Double Cask</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 300 / 19 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Спейсайд · односолодовый</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Хит</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Хересные и американские бочки: ваниль, карамель, сухофрукты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Lagavulin 16</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 400 / 21 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Айла · односолодовый</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мощный торф, дым, морская соль.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Johnnie Walker Blue Label</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 900 / 43 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шотландия · купаж</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Шёлковый, многослойный, с лёгким дымом.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">The Macallan 18 Sherry Oak</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">5 900 / 88 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Спейсайд · односолодовый</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Глубокий хересный: имбирь, сухофрукты, тёмный шоколад.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Woodford Reserve</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">850 / 13 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Бурбон · США</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Карамель, ваниль, корица. Основа нашего олд фэшн.</div>
+</div>
+
+</div>
+</section>
+
+<section id="japanese-whisky" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Японский виски</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л, если не указано иное.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Nikka from the Barrel</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 / 12 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Купаж · бутылка 0,5 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Плотный и пряный, ваниль и сухофрукты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hibiki Japanese Harmony</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 600 / 24 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>купаж</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мягкий и цветочный, мёд, апельсин, белый шоколад.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Yamazaki 12</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">3 300 / 49 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>односолодовый</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Тропические фрукты, мидзунара, кокос.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Suntory Toki</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">750 / 11 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Купаж</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Лёгкий и свежий: зелёное яблоко, мёд, белый перец. Лучший виски для хайбола.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Chita</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 000 / 15 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Зерновой</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мягкий и сладкий: мёд, ваниль, мята. Японская лёгкость.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Nikka Coffey Grain</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 / 16 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Зерновой</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Кукуруза, ваниль, тропические фрукты. Перегонка в колонне Коффи.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Nikka Taketsuru Pure Malt</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 200 / 18 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Солодовый купаж</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Фрукты, солод, лёгкий торфяной дымок.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hakushu 12</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">3 300 / 49 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Односолодовый</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">«Лесной» виски: зелёное яблоко, мята, лёгкий дым.</div>
+</div>
+
+</div>
+</section>
+
+<section id="cognac" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Коньяк и арманьяк</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hennessy XO</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 400 / 36 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Коньяк</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Хит</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Насыщенный и пряный: тёмный шоколад, перец, сухофрукты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Rémy Martin XO</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 400 / 36 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Коньяк · Fine Champagne</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Инжир, жасмин, корица, долгое послевкусие.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Martell Cordon Bleu</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 200 / 33 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Коньяк</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Фруктовый и ореховый, нота засахаренного апельсина.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Darroze Les Grands Assemblages 20 ans</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 700 / 25 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Арманьяк</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Чернослив, кожа, ваниль. Для любителей выдержанного.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Courvoisier XO</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 300 / 34 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Коньяк</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Крем-брюле, апельсин, ирис.</div>
+</div>
+
+</div>
+</section>
+
+<section id="agave" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Текила и мескаль</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Patrón Silver</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Текила · бланко</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Чистая агава, цитрус и перец.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Del Maguey Vida</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Мескаль</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Дымный, с нотами печёной агавы и тропических фруктов.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Don Julio 1942</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 300 / 34 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Текила · аньехо</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Карамель, ваниль, шоколад — текила для медленного вечера.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Clase Azul Reposado</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 900 / 43 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Текила · репосадо</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мягкая и сливочная, в знаменитом керамическом графине.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Casamigos Reposado</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 300 / 19 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Текила · репосадо</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Карамель, ваниль и мягкий дуб.</div>
+</div>
+
+</div>
+</section>
+
+<section id="rum" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Ром</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Diplomático Reserva Exclusiva</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Венесуэла</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Ирис, апельсиновая цедра, ваниль.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Zacapa 23</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 / 16 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Гватемала</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мёд, сухофрукты, дуб. Мягкий и сладкий.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Zacapa XO</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 300 / 34 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Гватемала</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Выдержанный в бочках из-под коньяка: шоколад, специи, кофе.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Plantation XO 20th Anniversary</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Барбадос</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Кокос, ваниль, тропические фрукты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ryoma 7 лет</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">900 / 13 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японский ром из сахарного тростника: мёд, дуб, специи.</div>
+</div>
+
+</div>
+</section>
+
+<section id="vodka" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Водка</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Belvedere</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">650 / 10 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Польша</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Ржаная, мягкая, с лёгкой сливочностью.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Grey Goose</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">650 / 10 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Франция</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Пшеничная, чистая и гладкая.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Mamont</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">650 / 10 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Россия, Сибирь</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сибирская водка на мягкой воде, в бутылке в форме бивня мамонта. Чистая, с лёгкой зерновой сладостью.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Beluga Gold Line</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">900 / 13 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Россия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Выдержанная, бархатистая. Подаём охлаждённой.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Absolut Elyx</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">700 / 10 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Швеция</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Однокупажная, шелковистая, подаём в медном стакане.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Haku</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">700 / 10 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · Suntory</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Рисовая водка, фильтрованная через бамбуковый уголь. Мягкая и сладковатая.</div>
+</div>
+
+</div>
+</section>
+
+<section id="gin" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Джин</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л. Джин-тоник — +350 ₽ к цене порции.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Bombay Sapphire</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">650 / 10 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Англия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Лёгкий и цветочный, 10 ботаников: можжевельник, цитрус, специи.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Tanqueray No. Ten</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">800 / 12 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Англия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Свежий грейпфрут, лайм и ромашка. Классика для мартини.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hendrick’s</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">750 / 11 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Шотландия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Огурец и роза, мягкий и освежающий.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Roku</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">800 / 12 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японские ботаники: юдзу, сакура, чай сэнча. Идеален к нашей кухне.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Gin Mare</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">900 / 13 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Испания</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Средиземноморский: оливка, розмарин, базилик, тимьян.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Monkey 47</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 / 12 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Германия · бутылка 0,5 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">47 ботаников, хвоя, цитрус, специи.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ki No Bi</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 / 16 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · Киото</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Киотский джин на рисовом спирте: юдзу, гёкуро, японский перец.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Nikka Coffey Gin</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">950 / 14 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японские цитрусы и яблоко, мягкий и яркий.</div>
+</div>
+
+</div>
+</section>
+
+<section id="sake" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Сакэ и сётю</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Японские рисовые и ячменные напитки к нашей кухне.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hakkaisan Junmai Ginjo</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 800 / 8 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сакэ · 180 мл / 720 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сухое и чистое, лёгкие фруктовые ноты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Dassai 45</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 000 / 9 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Дыня, груша, белые цветы. Одно из самых известных сакэ Японии.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Gekkeikan</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">900 / 4 500 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сакэ · 180 мл / 720 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Классическое сакэ, подаём тёплым или охлаждённым.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Kubota Manju</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 300 / 12 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Элегантное и сложное: дыня, рис, белые цветы.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Dassai 23</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">3 500 / 22 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Рис отполирован до 23%. Тонкое, фруктовое, бархатное. Флагман Dassai.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Iichiko Silhouette</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">700 / 9 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сётю · 60 мл / 720 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Ячменный сётю: мягкий, с нотами злаков и груши. Со льдом или с водой.</div>
+</div>
+
+</div>
+</section>
+
+<section id="liqueurs" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Ликёры</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Порция 40 мл / бутылка 0,7 л. Умэсю — 100 мл / 0,75 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Choya Umeshu</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">900 / 6 900 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сливовое вино · 100 мл / 0,75 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сладкое, с ароматом японской сливы умэ. Подаём со льдом.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Midori</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">600 / 9 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Дынный ликёр · Япония</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Яркий японский дынный ликёр, основа мидори сауэр.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Baileys</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">550 / 8 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Сливочный ликёр · Ирландия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сливки, ирландский виски, шоколад.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Disaronno</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">600 / 9 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Амаретто · Италия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Миндаль и марципан.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Limoncello</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">550 / 8 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Италия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Охлаждённый лимонный ликёр.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Jägermeister</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">550 / 8 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Травяной ликёр · Германия</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">56 трав и специй. Подаём ледяным.</div>
+</div>
+
+</div>
+</section>
+
+<section id="beer" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Японское пиво</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Охлаждённое, в бутылке.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Asahi Super Dry</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">590 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · 0,33 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японское светлое, сухое и освежающее.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Sapporo Premium</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">690 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · 0,5 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мягкое японское светлое пиво.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Kirin Ichiban</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">590 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · 0,33 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Пиво «первого отжима»: чистое и солодовое.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Hitachino Nest White Ale</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">890 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Япония · 0,33 л</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Новинка</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японский крафт: кориандр, апельсин, мускатный орех.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Asahi Super Dry 0.0</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">490 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Безалкогольное · 0,33 л</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Вкус Asahi без алкоголя.</div>
+</div>
+
+</div>
+</section>
+
+<section id="cocktails" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Коктейли</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Классика и авторские коктейли нашего бара.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Aperol Spritz</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>200 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Апероль, просекко, содовая, апельсин.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Маргарита</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>150 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Текила, ликёр трипл-сек, лайм, соль.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Эспрессо мартини</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 100 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>120 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Водка, кофейный ликёр, свежий эспрессо.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Негрони</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 200 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>90 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Джин, Кампари, красный вермут.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Олд фэшн</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 300 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>90 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Бурбон, биттер, апельсиновая цедра.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Dynasty</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 400 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Авторский · 150 мл</span><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: #B394FF; border-radius: 999px; padding: 2px 9px; font-weight: 700">Хит</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Джин, юдзу, лавандовый сироп, игристое. Фиолетовый, как наш логотип.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Пурпурный дым</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 400 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>Авторский · 120 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мескаль, ежевика, лайм, дымная пенка.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Японский хайбол</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>200 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Suntory Toki, ледяная содовая, лимонная цедра. Как в барах Токио.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Юдзу сауэр</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 200 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>120 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Японский виски, юдзу, мёд, белок.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Мидори сауэр</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 000 ₽</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>150 мл</span></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Дынный ликёр Midori, лимон, содовая.</div>
+</div>
+
+</div>
+</section>
+
+
+<footer style="max-width: 1240px; margin: 72px auto 0; padding: 32px 24px; border-top: 1px solid #261C36; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #9488A8">
+<span>Цены в рублях. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+<a href="index.html" style="color: #9488A8">← На главную</a>
+</footer>
+
+</div>
+</div>
+<template id="tpl">
+
+<div style="width: 100%; min-height: 100vh; background: radial-gradient(60% 40% at 80% 0%, rgba(109,63,224,0.32), transparent 70%), #08060C; color: #F1EDF7; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="Dynasty Lounge — на главную" style="display: flex; flex-direction: column; line-height: 1; text-decoration: none; color: #F1EDF7"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.32em">DYNASTY</span><span style="margin-top: 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.62em; text-transform: uppercase; color: {{accent}}">Lounge</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="food.html" style="border: 1px solid #3D2E55; color: #F1EDF7; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Кухня</a>
+<a href="index.html" style="background: {{accent}}; color: #12091F; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Забронировать</a>
+</div>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px">
+<p style="display: flex; align-items: center; gap: 14px; margin: 0 0 20px; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: {{accent}}">Dynasty Lounge · 18+<span style="width: 48px; height: 1px; background: #6D3FE0"></span></p>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(52px, 9vw, 112px); line-height: 0.95; letter-spacing: -0.02em">Барная <em style="font-style: italic; color: {{accent}}">карта</em></h1>
+<p style="margin: 28px 0 0; max-width: 620px; font-size: 19px; color: #C9C0D9">Шампанское и вино, коллекционный виски, коньяк, текила и ром, большой выбор японского: виски, сакэ, сётю и пиво. И авторские коктейли к кальяну.</p>
+<p style="margin: 20px 0 0; max-width: 620px; font-size: 14px; color: #9488A8">Алкоголь оплачивается отдельно и не входит в депозит VIP rooms и Premium room. Продаём только гостям старше 18 лет.</p>
+</section>
+
+<nav aria-label="Разделы барной карты" style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 8px">
+<template data-for="cats" data-as="c">
+<a href="#{{c.id}}" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">{{c.title}}</a>
+</template>
+</nav>
+
+<template data-for="cats" data-as="c">
+<section id="{{c.id}}" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">{{c.title}}</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">{{c.sub}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+<template data-for="c.items" data-as="it">
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">{{it.name}}</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: {{accent}}">{{it.price}}</span></div>
+<div style="margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8"><span>{{it.meta}}</span><template data-if="it.hasTag"><span style="font-size: 11px; letter-spacing: 0.12em; color: #12091F; background: {{accent}}; border-radius: 999px; padding: 2px 9px; font-weight: 700">{{it.tag}}</span></template></div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">{{it.note}}</div>
+</div>
+</template>
+</div>
+</section>
+</template>
+
+<footer style="max-width: 1240px; margin: 72px auto 0; padding: 32px 24px; border-top: 1px solid #261C36; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #9488A8">
+<span>Цены в рублях. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+<a href="index.html" style="color: #9488A8">← На главную</a>
+</footer>
+
+</div>
+</template>
+<script>/* Dynasty Lounge — крошечный рендерер шаблонов (замена редакторского рантайма для статического хостинга) */
+(function () {
+  class DCLogic {
+    constructor(props) { this.props = props || {}; this.state = {}; }
+    setState(patch) { Object.assign(this.state, patch); schedule(); }
+  }
+  window.DCLogic = DCLogic;
+
+  var root, tpl, comp, queued = false, first = true;
+
+  function lookup(path, scopes) {
+    var parts = path.trim().split('.');
+    for (var i = scopes.length - 1; i >= 0; i--) {
+      if (scopes[i] && Object.prototype.hasOwnProperty.call(scopes[i], parts[0])) {
+        var v = scopes[i][parts[0]];
+        for (var k = 1; k < parts.length; k++) v = v == null ? undefined : v[parts[k]];
+        return v;
+      }
+    }
+    if (parts[0] === 'true') return true;
+    if (parts[0] === 'false') return false;
+    return undefined;
+  }
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  function interp(str, scopes) {
+    return str.replace(HOLE, function (_, p) { var v = lookup(p, scopes); return v == null ? '' : String(v); });
+  }
+
+  function build(src, scopes, out) {
+    src.childNodes.forEach(function (n) {
+      if (n.nodeType === 3) { out.appendChild(document.createTextNode(interp(n.nodeValue, scopes))); return; }
+      if (n.nodeType !== 1) return;
+      if (n.tagName === 'TEMPLATE' && n.hasAttribute('data-for')) {
+        var list = lookup(n.getAttribute('data-for'), scopes) || [];
+        var as = n.getAttribute('data-as');
+        list.forEach(function (item, i) {
+          var s = {}; s[as] = item; s[as + 'Index'] = i;
+          build(n.content, scopes.concat([s]), out);
+        });
+        return;
+      }
+      if (n.tagName === 'TEMPLATE' && n.hasAttribute('data-if')) {
+        if (lookup(n.getAttribute('data-if'), scopes)) build(n.content, scopes, out);
+        return;
+      }
+      var el = document.createElement(n.tagName.toLowerCase());
+      for (var a = 0; a < n.attributes.length; a++) {
+        var at = n.attributes[a];
+        if (at.name === 'data-on-click') {
+          var fn = lookup(at.value, scopes);
+          if (typeof fn === 'function') el.addEventListener('click', fn);
+          continue;
+        }
+        if (at.name === 'defaultvalue') { el.setAttribute('data-default', interp(at.value, scopes)); continue; }
+        el.setAttribute(at.name, interp(at.value, scopes));
+      }
+      build(n.tagName === 'TEMPLATE' ? n.content : n, scopes, el);
+      out.appendChild(el);
+    });
+  }
+
+  function render() {
+    queued = false;
+    var saved = {};
+    root.querySelectorAll('[data-key]').forEach(function (f) {
+      saved[f.getAttribute('data-key')] = f.type === 'checkbox' ? f.checked : f.value;
+    });
+    var vals = comp.renderVals();
+    var frag = document.createDocumentFragment();
+    build(tpl.content, [vals], frag);
+    frag.querySelectorAll('[data-default]').forEach(function (f) {
+      if (f.tagName === 'SELECT') f.value = f.getAttribute('data-default');
+      else f.value = f.getAttribute('data-default');
+    });
+    if (!first) frag.querySelectorAll('[data-key]').forEach(function (f) {
+      var k = f.getAttribute('data-key');
+      if (k in saved) { if (f.type === 'checkbox') f.checked = saved[k]; else f.value = saved[k]; }
+    });
+    root.replaceChildren(frag);
+    first = false;
+    if (window.DCAfterRender) window.DCAfterRender(root, comp);
+  }
+  function schedule() { if (!queued) { queued = true; Promise.resolve().then(render); } }
+
+  window.DCMount = function (Component) {
+    root = document.getElementById('app');
+    tpl = document.getElementById('tpl');
+    comp = new Component({});
+    render();
+  };
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    const DATA = /*DATA*/{"cats":[
+{"id": "sparkling", "title": "Шампанское и игристое", "sub": "Бокал 125 мл / бутылка 750 мл.", "items": [{"name": "Абрау-Дюрсо Victor Dravigny Brut", "meta": "Россия · бокал / бутылка", "note": "Российское игристое классическим методом. Свежее, с нотами яблока и бриоши.", "price": "850 / 4 900 ₽"}, {"name": "Mionetto Prosecco Brut", "meta": "Италия · бокал / бутылка", "note": "Лёгкое и фруктовое, груша и цитрус.", "price": "950 / 5 900 ₽"}, {"name": "Moët & Chandon Impérial Brut", "meta": "Шампань · бокал / бутылка", "note": "Классика шампанского: зелёное яблоко, белые цветы, бриошь.", "price": "1 900 / 14 000 ₽"}, {"name": "Veuve Clicquot Brut", "meta": "Шампань · бокал / бутылка", "note": "Плотное и насыщенное, с нотами выпечки и спелых фруктов.", "price": "2 200 / 16 000 ₽", "tag": "Хит"}, {"name": "Ruinart Blanc de Blancs", "meta": "Шампань · бутылка", "note": "Только шардоне. Цитрус, жасмин, тонкая минеральность.", "price": "29 000 ₽"}, {"name": "Dom Pérignon", "meta": "Шампань · винтаж · бутылка", "note": "Легендарное винтажное шампанское для особого повода.", "price": "75 000 ₽"}]},
+{"id": "wine", "title": "Вино", "sub": "Бокал 150 мл / бутылка 750 мл.", "items": [{"name": "Лефкадия Шардоне", "meta": "Россия, Кубань · бокал / бутылка", "note": "Сливочное, с нотами груши и ванили.", "price": "1 000 / 5 900 ₽"}, {"name": "Chablis, William Fèvre", "meta": "Бургундия · бокал / бутылка", "note": "Сухое белое: цитрус, мел, устричная свежесть. Идеально к сашими.", "price": "1 400 / 8 500 ₽"}, {"name": "Sancerre", "meta": "Луара · бокал / бутылка", "note": "Совиньон блан: крыжовник, цитрус, свежая трава.", "price": "1 500 / 8 900 ₽"}, {"name": "Bourgogne Pinot Noir", "meta": "Бургундия · бокал / бутылка", "note": "Лёгкое красное: вишня, малина, лесные ягоды.", "price": "1 500 / 8 900 ₽"}, {"name": "Châteauneuf-du-Pape", "meta": "Долина Роны · бутылка", "note": "Насыщенное красное: тёмные ягоды, специи, прованские травы.", "price": "14 000 ₽"}, {"name": "Barolo", "meta": "Пьемонт · бутылка", "note": "Неббиоло: роза, вишня, табак и мощные танины.", "price": "16 000 ₽"}, {"name": "Grace Koshu", "meta": "Япония, Яманаси · бокал / бутылка", "note": "Японский белый сорт косю: юдзу, белый персик, лёгкость. Отлично к сашими.", "price": "1 600 / 9 500 ₽", "tag": "Новинка"}]},
+{"id": "whisky", "title": "Виски", "sub": "Порция 40 мл / бутылка 0,7 л.", "items": [{"name": "Glenfiddich 15", "meta": "Спейсайд · односолодовый", "note": "Мёд, сухофрукты, мягкий хересный оттенок.", "price": "950 / 14 000 ₽"}, {"name": "The Macallan 12 Double Cask", "meta": "Спейсайд · односолодовый", "note": "Хересные и американские бочки: ваниль, карамель, сухофрукты.", "price": "1 300 / 19 500 ₽", "tag": "Хит"}, {"name": "Lagavulin 16", "meta": "Айла · односолодовый", "note": "Мощный торф, дым, морская соль.", "price": "1 400 / 21 000 ₽"}, {"name": "Johnnie Walker Blue Label", "meta": "Шотландия · купаж", "note": "Шёлковый, многослойный, с лёгким дымом.", "price": "2 900 / 43 500 ₽"}, {"name": "The Macallan 18 Sherry Oak", "meta": "Спейсайд · односолодовый", "note": "Глубокий хересный: имбирь, сухофрукты, тёмный шоколад.", "price": "5 900 / 88 500 ₽"}, {"name": "Woodford Reserve", "meta": "Бурбон · США", "note": "Карамель, ваниль, корица. Основа нашего олд фэшн.", "price": "850 / 13 000 ₽"}]},
+{"id": "japanese-whisky", "title": "Японский виски", "sub": "Порция 40 мл / бутылка 0,7 л, если не указано иное.", "items": [{"name": "Nikka from the Barrel", "meta": "Купаж · бутылка 0,5 л", "note": "Плотный и пряный, ваниль и сухофрукты.", "price": "1 100 / 12 000 ₽"}, {"name": "Hibiki Japanese Harmony", "meta": "купаж", "note": "Мягкий и цветочный, мёд, апельсин, белый шоколад.", "price": "1 600 / 24 000 ₽"}, {"name": "Yamazaki 12", "meta": "односолодовый", "note": "Тропические фрукты, мидзунара, кокос.", "price": "3 300 / 49 500 ₽"}, {"name": "Suntory Toki", "meta": "Купаж", "note": "Лёгкий и свежий: зелёное яблоко, мёд, белый перец. Лучший виски для хайбола.", "price": "750 / 11 000 ₽"}, {"name": "Chita", "meta": "Зерновой", "note": "Мягкий и сладкий: мёд, ваниль, мята. Японская лёгкость.", "price": "1 000 / 15 000 ₽"}, {"name": "Nikka Coffey Grain", "meta": "Зерновой", "note": "Кукуруза, ваниль, тропические фрукты. Перегонка в колонне Коффи.", "price": "1 100 / 16 500 ₽"}, {"name": "Nikka Taketsuru Pure Malt", "meta": "Солодовый купаж", "note": "Фрукты, солод, лёгкий торфяной дымок.", "price": "1 200 / 18 000 ₽"}, {"name": "Hakushu 12", "meta": "Односолодовый", "note": "«Лесной» виски: зелёное яблоко, мята, лёгкий дым.", "price": "3 300 / 49 500 ₽", "tag": "Новинка"}]},
+{"id": "cognac", "title": "Коньяк и арманьяк", "sub": "Порция 40 мл / бутылка 0,7 л.", "items": [{"name": "Hennessy XO", "meta": "Коньяк", "note": "Насыщенный и пряный: тёмный шоколад, перец, сухофрукты.", "price": "2 400 / 36 000 ₽", "tag": "Хит"}, {"name": "Rémy Martin XO", "meta": "Коньяк · Fine Champagne", "note": "Инжир, жасмин, корица, долгое послевкусие.", "price": "2 400 / 36 000 ₽"}, {"name": "Martell Cordon Bleu", "meta": "Коньяк", "note": "Фруктовый и ореховый, нота засахаренного апельсина.", "price": "2 200 / 33 000 ₽"}, {"name": "Darroze Les Grands Assemblages 20 ans", "meta": "Арманьяк", "note": "Чернослив, кожа, ваниль. Для любителей выдержанного.", "price": "1 700 / 25 500 ₽"}, {"name": "Courvoisier XO", "meta": "Коньяк", "note": "Крем-брюле, апельсин, ирис.", "price": "2 300 / 34 500 ₽"}]},
+{"id": "agave", "title": "Текила и мескаль", "sub": "Порция 40 мл / бутылка 0,7 л.", "items": [{"name": "Patrón Silver", "meta": "Текила · бланко", "note": "Чистая агава, цитрус и перец.", "price": "950 / 14 000 ₽"}, {"name": "Del Maguey Vida", "meta": "Мескаль", "note": "Дымный, с нотами печёной агавы и тропических фруктов.", "price": "950 / 14 000 ₽"}, {"name": "Don Julio 1942", "meta": "Текила · аньехо", "note": "Карамель, ваниль, шоколад — текила для медленного вечера.", "price": "2 300 / 34 500 ₽"}, {"name": "Clase Azul Reposado", "meta": "Текила · репосадо", "note": "Мягкая и сливочная, в знаменитом керамическом графине.", "price": "2 900 / 43 500 ₽"}, {"name": "Casamigos Reposado", "meta": "Текила · репосадо", "note": "Карамель, ваниль и мягкий дуб.", "price": "1 300 / 19 500 ₽"}]},
+{"id": "rum", "title": "Ром", "sub": "Порция 40 мл / бутылка 0,7 л.", "items": [{"name": "Diplomático Reserva Exclusiva", "meta": "Венесуэла", "note": "Ирис, апельсиновая цедра, ваниль.", "price": "950 / 14 000 ₽"}, {"name": "Zacapa 23", "meta": "Гватемала", "note": "Мёд, сухофрукты, дуб. Мягкий и сладкий.", "price": "1 100 / 16 500 ₽"}, {"name": "Zacapa XO", "meta": "Гватемала", "note": "Выдержанный в бочках из-под коньяка: шоколад, специи, кофе.", "price": "2 300 / 34 500 ₽"}, {"name": "Plantation XO 20th Anniversary", "meta": "Барбадос", "note": "Кокос, ваниль, тропические фрукты.", "price": "950 / 14 000 ₽"}, {"name": "Ryoma 7 лет", "meta": "Япония", "note": "Японский ром из сахарного тростника: мёд, дуб, специи.", "price": "900 / 13 500 ₽", "tag": "Новинка"}]},
+{"id": "vodka", "title": "Водка", "sub": "Порция 40 мл / бутылка 0,7 л.", "items": [{"name": "Belvedere", "meta": "Польша", "note": "Ржаная, мягкая, с лёгкой сливочностью.", "price": "650 / 10 000 ₽"}, {"name": "Grey Goose", "meta": "Франция", "note": "Пшеничная, чистая и гладкая.", "price": "650 / 10 000 ₽"}, {"name": "Mamont", "meta": "Россия, Сибирь", "note": "Сибирская водка на мягкой воде, в бутылке в форме бивня мамонта. Чистая, с лёгкой зерновой сладостью.", "price": "650 / 10 000 ₽"}, {"name": "Beluga Gold Line", "meta": "Россия", "note": "Выдержанная, бархатистая. Подаём охлаждённой.", "price": "900 / 13 500 ₽"}, {"name": "Absolut Elyx", "meta": "Швеция", "note": "Однокупажная, шелковистая, подаём в медном стакане.", "price": "700 / 10 500 ₽"}, {"name": "Haku", "meta": "Япония · Suntory", "note": "Рисовая водка, фильтрованная через бамбуковый уголь. Мягкая и сладковатая.", "price": "700 / 10 500 ₽", "tag": "Новинка"}]},
+{"id": "gin", "title": "Джин", "sub": "Порция 40 мл / бутылка 0,7 л. Джин-тоник — +350 ₽ к цене порции.", "items": [{"name": "Bombay Sapphire", "meta": "Англия", "note": "Лёгкий и цветочный, 10 ботаников: можжевельник, цитрус, специи.", "price": "650 / 10 000 ₽"}, {"name": "Tanqueray No. Ten", "meta": "Англия", "note": "Свежий грейпфрут, лайм и ромашка. Классика для мартини.", "price": "800 / 12 000 ₽"}, {"name": "Hendrick’s", "meta": "Шотландия", "note": "Огурец и роза, мягкий и освежающий.", "price": "750 / 11 000 ₽"}, {"name": "Roku", "meta": "Япония", "note": "Японские ботаники: юдзу, сакура, чай сэнча. Идеален к нашей кухне.", "price": "800 / 12 000 ₽", "tag": "Новинка"}, {"name": "Gin Mare", "meta": "Испания", "note": "Средиземноморский: оливка, розмарин, базилик, тимьян.", "price": "900 / 13 500 ₽"}, {"name": "Monkey 47", "meta": "Германия · бутылка 0,5 л", "note": "47 ботаников, хвоя, цитрус, специи.", "price": "1 100 / 12 000 ₽"}, {"name": "Ki No Bi", "meta": "Япония · Киото", "note": "Киотский джин на рисовом спирте: юдзу, гёкуро, японский перец.", "price": "1 100 / 16 500 ₽"}, {"name": "Nikka Coffey Gin", "meta": "Япония", "note": "Японские цитрусы и яблоко, мягкий и яркий.", "price": "950 / 14 000 ₽"}]},
+{"id": "sake", "title": "Сакэ и сётю", "sub": "Японские рисовые и ячменные напитки к нашей кухне.", "items": [{"name": "Hakkaisan Junmai Ginjo", "meta": "Сакэ · 180 мл / 720 мл", "note": "Сухое и чистое, лёгкие фруктовые ноты.", "price": "1 800 / 8 900 ₽"}, {"name": "Dassai 45", "meta": "Сакэ · Junmai Daiginjo · 180 мл / 720 мл", "note": "Дыня, груша, белые цветы. Одно из самых известных сакэ Японии.", "price": "2 000 / 9 900 ₽"}, {"name": "Gekkeikan", "meta": "Сакэ · 180 мл / 720 мл", "note": "Классическое сакэ, подаём тёплым или охлаждённым.", "price": "900 / 4 500 ₽"}, {"name": "Kubota Manju", "meta": "Сакэ · Junmai Daiginjo · 180 мл / 720 мл", "note": "Элегантное и сложное: дыня, рис, белые цветы.", "price": "2 300 / 12 900 ₽"}, {"name": "Dassai 23", "meta": "Сакэ · Junmai Daiginjo · 180 мл / 720 мл", "note": "Рис отполирован до 23%. Тонкое, фруктовое, бархатное. Флагман Dassai.", "price": "3 500 / 22 000 ₽", "tag": "Новинка"}, {"name": "Iichiko Silhouette", "meta": "Сётю · 60 мл / 720 мл", "note": "Ячменный сётю: мягкий, с нотами злаков и груши. Со льдом или с водой.", "price": "700 / 9 900 ₽"}]},
+{"id": "liqueurs", "title": "Ликёры", "sub": "Порция 40 мл / бутылка 0,7 л. Умэсю — 100 мл / 0,75 л.", "items": [{"name": "Choya Umeshu", "meta": "Сливовое вино · 100 мл / 0,75 л", "note": "Сладкое, с ароматом японской сливы умэ. Подаём со льдом.", "price": "900 / 6 900 ₽"}, {"name": "Midori", "meta": "Дынный ликёр · Япония", "note": "Яркий японский дынный ликёр, основа мидори сауэр.", "price": "600 / 9 000 ₽"}, {"name": "Baileys", "meta": "Сливочный ликёр · Ирландия", "note": "Сливки, ирландский виски, шоколад.", "price": "550 / 8 000 ₽"}, {"name": "Disaronno", "meta": "Амаретто · Италия", "note": "Миндаль и марципан.", "price": "600 / 9 000 ₽"}, {"name": "Limoncello", "meta": "Италия", "note": "Охлаждённый лимонный ликёр.", "price": "550 / 8 000 ₽"}, {"name": "Jägermeister", "meta": "Травяной ликёр · Германия", "note": "56 трав и специй. Подаём ледяным.", "price": "550 / 8 000 ₽"}]},
+{"id": "beer", "title": "Японское пиво", "sub": "Охлаждённое, в бутылке.", "items": [{"name": "Asahi Super Dry", "meta": "Япония · 0,33 л", "note": "Японское светлое, сухое и освежающее.", "price": "590 ₽"}, {"name": "Sapporo Premium", "meta": "Япония · 0,5 л", "note": "Мягкое японское светлое пиво.", "price": "690 ₽"}, {"name": "Kirin Ichiban", "meta": "Япония · 0,33 л", "note": "Пиво «первого отжима»: чистое и солодовое.", "price": "590 ₽"}, {"name": "Hitachino Nest White Ale", "meta": "Япония · 0,33 л", "note": "Японский крафт: кориандр, апельсин, мускатный орех.", "price": "890 ₽", "tag": "Новинка"}, {"name": "Asahi Super Dry 0.0", "meta": "Безалкогольное · 0,33 л", "note": "Вкус Asahi без алкоголя.", "price": "490 ₽"}]},
+{"id": "cocktails", "title": "Коктейли", "sub": "Классика и авторские коктейли нашего бара.", "items": [{"name": "Aperol Spritz", "meta": "200 мл", "note": "Апероль, просекко, содовая, апельсин.", "price": "1 000 ₽"}, {"name": "Маргарита", "meta": "150 мл", "note": "Текила, ликёр трипл-сек, лайм, соль.", "price": "1 100 ₽"}, {"name": "Эспрессо мартини", "meta": "120 мл", "note": "Водка, кофейный ликёр, свежий эспрессо.", "price": "1 100 ₽"}, {"name": "Негрони", "meta": "90 мл", "note": "Джин, Кампари, красный вермут.", "price": "1 200 ₽"}, {"name": "Олд фэшн", "meta": "90 мл", "note": "Бурбон, биттер, апельсиновая цедра.", "price": "1 300 ₽"}, {"name": "Dynasty", "meta": "Авторский · 150 мл", "note": "Джин, юдзу, лавандовый сироп, игристое. Фиолетовый, как наш логотип.", "price": "1 400 ₽", "tag": "Хит"}, {"name": "Пурпурный дым", "meta": "Авторский · 120 мл", "note": "Мескаль, ежевика, лайм, дымная пенка.", "price": "1 400 ₽"}, {"name": "Японский хайбол", "meta": "200 мл", "note": "Suntory Toki, ледяная содовая, лимонная цедра. Как в барах Токио.", "price": "1 000 ₽"}, {"name": "Юдзу сауэр", "meta": "120 мл", "note": "Японский виски, юдзу, мёд, белок.", "price": "1 200 ₽"}, {"name": "Мидори сауэр", "meta": "150 мл", "note": "Дынный ликёр Midori, лимон, содовая.", "price": "1 000 ₽"}]}
+]}/*END*/;
+    const cats = DATA.cats.map((c) => ({
+      ...c,
+      items: c.items.map((i) => ({ ...i, hasTag: !!i.tag, tag: i.tag || '' }))
+    }));
+    return { accent: this.props.accent ?? '#B394FF', cats };
+  }
+}
+
+
+DCMount(Component);</script>
+</body>
+</html>

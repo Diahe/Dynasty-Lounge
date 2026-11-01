@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Чайная карта — Dynasty Lounge</title>
+<meta name="description" content="Чайная карта Dynasty Lounge: пуэры, улуны, зелёные и красные чаи.">
+<meta property="og:title" content="Чайная карта — Dynasty Lounge">
+<meta property="og:description" content="Чайная карта Dynasty Lounge: пуэры, улуны, зелёные и красные чаи.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#08060C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Manrope:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#08060C}
+a{color:#B394FF}a:hover{color:#CDB8FF}
+</style>
+<style>html{scroll-behavior:smooth}input,select,textarea,button{font:inherit}</style>
+</head>
+<body>
+<div id="app">
+
+<div style="width: 100%; min-height: 100vh; background: radial-gradient(60% 40% at 80% 0%, rgba(109,63,224,0.32), transparent 70%), #08060C; color: #F1EDF7; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="Dynasty Lounge — на главную" style="display: flex; flex-direction: column; line-height: 1; text-decoration: none; color: #F1EDF7"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.32em">DYNASTY</span><span style="margin-top: 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.62em; text-transform: uppercase; color: #B394FF">Lounge</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="food.html" style="border: 1px solid #3D2E55; color: #F1EDF7; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Кухня</a>
+<a href="index.html" style="background: #B394FF; color: #12091F; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Забронировать</a>
+</div>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px">
+<p style="display: flex; align-items: center; gap: 14px; margin: 0 0 20px; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #B394FF">Dynasty Lounge<span style="width: 48px; height: 1px; background: #6D3FE0"></span></p>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(52px, 9vw, 112px); line-height: 0.95; letter-spacing: -0.02em">Чайная <em style="font-style: italic; color: #B394FF">карта</em></h1>
+<p style="margin: 28px 0 0; max-width: 620px; font-size: 19px; color: #C9C0D9">Пуэры, утёсные и тайваньские улуны, красные, белые, жёлтые и зелёные чаи из главных чайных провинций Китая. Каждый чай подаём в чайнике 600 мл.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 22px 26px; border: 1px solid #6D3FE0; border-radius: 18px; background: #150E21; max-width: 820px">
+<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 30px; line-height: 1; color: #B394FF">功夫茶</span>
+<span style="flex: 1 1 320px; color: #C9C0D9"><b style="color: #F1EDF7">Гунфу-ча.</b> Любой китайский чай можно заказать в гунфу-подаче: мастер заваривает его проливом в гайване прямо за вашим столом.</span>
+<span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">+ 500 ₽</span>
+</div>
+</section>
+
+<nav aria-label="Разделы чайной карты" style="max-width: 1240px; margin: 0 auto; padding: 8px 24px 8px; display: flex; flex-wrap: wrap; gap: 8px">
+
+<a href="#shu" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Шу пуэр</a>
+
+<a href="#sheng" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Шэн пуэр</a>
+
+<a href="#oolong" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Улуны Аньси и Тайваня</a>
+
+<a href="#yancha" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Утёсные улуны Уишаня</a>
+
+<a href="#dancong" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Фэнхуан Дань Цун</a>
+
+<a href="#red" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Красные чаи</a>
+
+<a href="#green" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Зелёные чаи</a>
+
+<a href="#white" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Белые чаи</a>
+
+<a href="#yellow" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Жёлтые чаи</a>
+
+<a href="#dark" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Тёмные чаи (Хэй Ча)</a>
+
+<a href="#flower" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Цветочные</a>
+
+<a href="#japan" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Японские чаи</a>
+
+<a href="#herbal" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Без кофеина</a>
+
+<a href="#signature" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">Авторские чаи</a>
+
+</nav>
+
+
+<section id="shu" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Шу пуэр</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Выдержанный тёмный пуэр из Юньнани: мягкий, сладкий, землистый. Хорошо идёт к кальяну и согревает.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Сяо То Ча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Юньнань · мини-точа</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Маленькие прессованные «гнёздышки». Мягкий, сладковатый, с нотами сухофруктов.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Гун Тин</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 190 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Мэнхай, Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Пуэр из самых мелких почек. Бархатный, сладкий, с ореховыми и шоколадными нотами.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Шу пуэр Мэнхай, 2015</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Мэнхай, Юньнань · выдержка</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Классический выдержанный пуэр. Плотный, древесный, с долгим сладким послевкусием.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Лао Ча Тоу</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 390 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">«Старые чайные головы» — комочки листа. Карамельный, густой, выдерживает много заварок.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Пуэр в мандарине</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 490 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Синьхуэй, Гуандун · Чэнь Пи</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Шу пуэр, выдержанный в кожуре мандарина. Цитрусовая свежесть поверх мягкой сладости.</div>
+</div>
+
+</div>
+</section>
+
+<section id="sheng" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Шэн пуэр</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Зелёный, «живой» пуэр. Яркий и бодрящий, с фруктовыми нотами и лёгкой горчинкой.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Шэн пуэр Иу, 2016</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 490 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Иу, Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мягкий для шэна: медовый, цветочный, с нежной сладостью.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Шэн пуэр Булан Шань, 2018</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 690 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Булан Шань, Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мощный и терпкий, с быстрой сладостью после горчинки. Для ценителей.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Гу Шу, древние деревья</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Линцан, Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Чай с деревьев, которым больше ста лет. Глубокий, маслянистый, очень долгое послевкусие.</div>
+</div>
+
+</div>
+</section>
+
+<section id="oolong" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Улуны Аньси и Тайваня</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Свёрнутые в шарики улуны: от лёгких цветочных до сливочных и медовых.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Молочный улун</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 090 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Тайвань · Най Сян Цзинь Сюань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сливочный, нежный, с ароматом молока и карамели. Самый любимый у гостей.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Те Гуань Инь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 190 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Аньси, Фуцзянь</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">«Железная Гуаньинь». Свежий цветочный аромат, сирень и орхидея.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Дун Дин</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 490 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Наньтоу, Тайвань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Улун средней обжарки. Орехово-цветочный, с тёплым хлебным оттенком.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Алишань</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 690 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">горы Алишань, Тайвань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Высокогорный улун. Сливочный, цветочный, очень чистый вкус.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Дун Фан Мэй Жэнь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Синьчжу, Тайвань · «Восточная красавица»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Лист, покусанный цикадками, даёт медово-фруктовый аромат, как у спелого персика.</div>
+</div>
+
+</div>
+</section>
+
+<section id="yancha" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Утёсные улуны Уишаня</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Сильно обжаренные улуны с утёсов Уишань: минеральные, глубокие, тёплые.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Шуй Сянь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 390 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">«Водяная нарцисса». Мягкий, с нотами орхидеи и тёмного мёда.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Да Хун Пао</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 490 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь · «Большой красный халат»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Легендарный утёсный улун. Обжаренный, шоколадно-древесный, с минеральностью.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ци Лань</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 590 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Яркий цветочный аромат орхидеи на фоне обжарки.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Жоу Гуй</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 690 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь · «Корица»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Пряный, с нотами корицы и спелых фруктов. Насыщенный и бодрящий.</div>
+</div>
+
+</div>
+</section>
+
+<section id="dancong" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Фэнхуан Дань Цун</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Улуны с горы Фэнхуан, каждый — с узнаваемым природным ароматом.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ми Лань Сян</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 690 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фэнхуан, Гуандун · «Медовая орхидея»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Яркий медово-цветочный аромат и сочная сладость.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Я Ши Сян</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 890 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фэнхуан, Гуандун</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Шуточное название, а вкус — гардения, жёлтые фрукты и долгий аромат.</div>
+</div>
+
+</div>
+</section>
+
+<section id="red" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Красные чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">В Китае их называют красными, у нас — чёрными. Сладкие, тёплые, с нотами мёда и сухофруктов.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Дянь Хун</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 090 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Юньнань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Золотистые почки, мёд, сухофрукты и лёгкая перечная нота.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ци Мэнь Хун Ча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Цимэнь, Аньхой</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Один из самых известных красных чаёв. Винные и какао-ноты.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Лапсанг Сушонг</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь · Чжэн Шань Сяо Чжун</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Копчёный на сосне. Аромат костра и сладость сушёного лонгана.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Цзинь Ло</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 390 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Юньнань · «Золотая улитка»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Скрученные золотые почки. Медовый, хлебный, очень мягкий.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Цзинь Цзюнь Мэй</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 890 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Уишань, Фуцзянь · «Золотые брови»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Только почки. Аромат мёда, печёного батата и цветов.</div>
+</div>
+
+</div>
+</section>
+
+<section id="green" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Зелёные чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Свежие и лёгкие, с ореховыми, цветочными и фруктовыми нотами.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Хуан Шань Мао Фэн</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 090 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Хуаншань, Аньхой</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Нежный, с ароматом орхидеи и свежей зелени.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Би Ло Чунь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 190 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Тайху, Цзянсу · «Изумрудные спирали»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Тонкие спиральки. Свежий, фруктовый, с ароматом весенних цветов.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Лун Цзин</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Ханчжоу, Чжэцзян · «Колодец дракона»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Плоский лист, ореховый и каштановый вкус. Самый известный зелёный чай Китая.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Тай Пин Хоу Куй</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 590 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Хуаншань, Аньхой</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Длинный плоский лист. Орхидея и мягкая сладость без горечи.</div>
+</div>
+
+</div>
+</section>
+
+<section id="white" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Белые чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Минимально обработанные чаи из Фудина: деликатные, медовые, цветочные.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Бай Му Дань</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 190 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фудин, Фуцзянь · «Белый пион»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Почки с листьями. Фруктовый, медовый, с ароматом луговых цветов.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Шоу Мэй, 2017</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фудин, Фуцзянь · выдержанный</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Выдержанный белый чай. Финики, сухофрукты и мягкая травяная сладость.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Бай Хао Инь Чжэнь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 890 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фудин, Фуцзянь · «Серебряные иглы»</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Только почки в серебристом пушке. Очень нежный, медово-цветочный.</div>
+</div>
+
+</div>
+</section>
+
+<section id="yellow" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Жёлтые чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Редкая категория: чай слегка томят, и он становится мягче и слаще зелёного.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Мэн Дин Хуан Я</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">гора Мэндин, Сычуань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Жёлтые почки. Сладкий, кукурузный, бархатный.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Цзюнь Шань Инь Чжэнь</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">2 490 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">остров Цзюньшань, Хунань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Один из самых редких чаёв Китая. Тонкий, сладкий, с нотами каштана.</div>
+</div>
+
+</div>
+</section>
+
+<section id="dark" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Тёмные чаи (Хэй Ча)</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Постферментированные чаи, родственники пуэра. Мягкие, землистые, прогревающие.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Фу Чжуань</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 190 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Аньхуа, Хунань</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Кирпич с «золотыми цветами» полезной плесени. Хлебный, сладкий, грибной.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Лю Бао</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Учжоу, Гуанси</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Выдержанный тёмный чай. Древесный, землистый, с прохладным послевкусием.</div>
+</div>
+
+</div>
+</section>
+
+<section id="flower" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Цветочные</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Чаи, ароматизированные живыми цветами, и цветы, которые заваривают сами по себе.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Хризантема Гун Цзюй</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">890 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Хуаншань, Аньхой</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Мелкие бутоны хризантемы. Без кофеина, освежает и мягко успокаивает.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Моли Хуа Ча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фуцзянь · жасминовый</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Зелёный чай, выдержанный с цветками жасмина. Классика, которую любят все.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Жасминовые жемчужины</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">1 290 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Фуцзянь · Моли Лун Чжу</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Почки, скрученные в жемчужины. Раскрываются в чайнике, аромат очень яркий.</div>
+</div>
+
+</div>
+</section>
+
+<section id="japan" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Японские чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Пара японских чаёв в пару к нашей кухне.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Генмайча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Япония</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Зелёный чай с обжаренным рисом. Тёплый, хлебный, уютный.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Сенча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Сидзуока, Япония</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Яркий травяной вкус, свежесть и лёгкая умами.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Матча</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">690 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Удзи, Япония · порция</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Взбиваем венчиком на воде или на молоке на выбор.</div>
+</div>
+
+</div>
+</section>
+
+<section id="herbal" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Без кофеина</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Для позднего вечера или тех, кто не пьёт чай с кофеином.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ку Цяо</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">790 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Сычуань · гречишный</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Обжаренная татарская гречиха. Хлебный, ореховый, без кофеина.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Иван-чай</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">790 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">Россия</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Ферментированный кипрей. Мягкий, с медовыми и фруктовыми нотами.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Ройбуш</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">790 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">ЮАР</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Сладкий, ванильно-ореховый, без кофеина.</div>
+</div>
+
+</div>
+</section>
+
+<section id="signature" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">Авторские чаи</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">Яркие фруктовые и пряные чаи. Подаём в чайнике 1 л.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Масала</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">890 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">на молоке · 600 мл</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Чёрный чай с кардамоном, корицей, имбирём и гвоздикой.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Облепиха и маракуйя</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">1 л</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Кисло-сладкий, яркий, согревающий.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Малина и мята</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">1 л</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Ягодный, свежий, с мятной прохладой.</div>
+</div>
+
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">Имбирь, лимон, мёд</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: #B394FF">990 ₽</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">1 л</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">Пряный и согревающий, с медовой сладостью.</div>
+</div>
+
+</div>
+</section>
+
+
+<footer style="max-width: 1240px; margin: 72px auto 0; padding: 32px 24px; border-top: 1px solid #261C36; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #9488A8">
+<span>Объём чайника — 600 мл, если не указано иное. Цены в рублях.</span>
+<a href="index.html" style="color: #9488A8">← На главную</a>
+</footer>
+
+</div>
+</div>
+<template id="tpl">
+
+<div style="width: 100%; min-height: 100vh; background: radial-gradient(60% 40% at 80% 0%, rgba(109,63,224,0.32), transparent 70%), #08060C; color: #F1EDF7; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" aria-label="Dynasty Lounge — на главную" style="display: flex; flex-direction: column; line-height: 1; text-decoration: none; color: #F1EDF7"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.32em">DYNASTY</span><span style="margin-top: 5px; font-size: 10px; font-weight: 500; letter-spacing: 0.62em; text-transform: uppercase; color: {{accent}}">Lounge</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<a href="food.html" style="border: 1px solid #3D2E55; color: #F1EDF7; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Кухня</a>
+<a href="index.html" style="background: {{accent}}; color: #12091F; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 18px; border-radius: 4px">Забронировать</a>
+</div>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px">
+<p style="display: flex; align-items: center; gap: 14px; margin: 0 0 20px; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: {{accent}}">Dynasty Lounge<span style="width: 48px; height: 1px; background: #6D3FE0"></span></p>
+<h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(52px, 9vw, 112px); line-height: 0.95; letter-spacing: -0.02em">Чайная <em style="font-style: italic; color: {{accent}}">карта</em></h1>
+<p style="margin: 28px 0 0; max-width: 620px; font-size: 19px; color: #C9C0D9">Пуэры, утёсные и тайваньские улуны, красные, белые, жёлтые и зелёные чаи из главных чайных провинций Китая. Каждый чай подаём в чайнике 600 мл.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 22px 26px; border: 1px solid #6D3FE0; border-radius: 18px; background: #150E21; max-width: 820px">
+<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 30px; line-height: 1; color: {{accent}}">功夫茶</span>
+<span style="flex: 1 1 320px; color: #C9C0D9"><b style="color: #F1EDF7">Гунфу-ча.</b> Любой китайский чай можно заказать в гунфу-подаче: мастер заваривает его проливом в гайване прямо за вашим столом.</span>
+<span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: {{accent}}">+ 500 ₽</span>
+</div>
+</section>
+
+<nav aria-label="Разделы чайной карты" style="max-width: 1240px; margin: 0 auto; padding: 8px 24px 8px; display: flex; flex-wrap: wrap; gap: 8px">
+<template data-for="cats" data-as="c">
+<a href="#{{c.id}}" style="border: 1px solid #3D2E55; border-radius: 999px; padding: 9px 16px; font-size: 14px; color: #C9C0D9; text-decoration: none; background: #150E21">{{c.title}}</a>
+</template>
+</nav>
+
+<template data-for="cats" data-as="c">
+<section id="{{c.id}}" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid #3D2E55; padding-bottom: 18px">
+<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05">{{c.title}}</h2>
+<p style="margin: 0; max-width: 520px; color: #B1A6C4">{{c.sub}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: 64px">
+<template data-for="c.items" data-as="it">
+<div style="padding: 22px 0; border-bottom: 1px solid #261C36">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.2">{{it.name}}</span><span style="flex: 1; min-width: 24px; border-bottom: 1px dotted #3D2E55; transform: translateY(-6px)"></span><span style="white-space: nowrap; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; color: {{accent}}">{{it.price}}</span></div>
+<div style="margin-top: 2px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9488A8">{{it.origin}}</div>
+<div style="margin-top: 6px; color: #C9C0D9; font-size: 16px">{{it.note}}</div>
+</div>
+</template>
+</div>
+</section>
+</template>
+
+<footer style="max-width: 1240px; margin: 72px auto 0; padding: 32px 24px; border-top: 1px solid #261C36; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #9488A8">
+<span>Объём чайника — 600 мл, если не указано иное. Цены в рублях.</span>
+<a href="index.html" style="color: #9488A8">← На главную</a>
+</footer>
+
+</div>
+</template>
+<script>/* Dynasty Lounge — крошечный рендерер шаблонов (замена редакторского рантайма для статического хостинга) */
+(function () {
+  class DCLogic {
+    constructor(props) { this.props = props || {}; this.state = {}; }
+    setState(patch) { Object.assign(this.state, patch); schedule(); }
+  }
+  window.DCLogic = DCLogic;
+
+  var root, tpl, comp, queued = false, first = true;
+
+  function lookup(path, scopes) {
+    var parts = path.trim().split('.');
+    for (var i = scopes.length - 1; i >= 0; i--) {
+      if (scopes[i] && Object.prototype.hasOwnProperty.call(scopes[i], parts[0])) {
+        var v = scopes[i][parts[0]];
+        for (var k = 1; k < parts.length; k++) v = v == null ? undefined : v[parts[k]];
+        return v;
+      }
+    }
+    if (parts[0] === 'true') return true;
+    if (parts[0] === 'false') return false;
+    return undefined;
+  }
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  function interp(str, scopes) {
+    return str.replace(HOLE, function (_, p) { var v = lookup(p, scopes); return v == null ? '' : String(v); });
+  }
+
+  function build(src, scopes, out) {
+    src.childNodes.forEach(function (n) {
+      if (n.nodeType === 3) { out.appendChild(document.createTextNode(interp(n.nodeValue, scopes))); return; }
+      if (n.nodeType !== 1) return;
+      if (n.tagName === 'TEMPLATE' && n.hasAttribute('data-for')) {
+        var list = lookup(n.getAttribute('data-for'), scopes) || [];
+        var as = n.getAttribute('data-as');
+        list.forEach(function (item, i) {
+          var s = {}; s[as] = item; s[as + 'Index'] = i;
+          build(n.content, scopes.concat([s]), out);
+        });
+        return;
+      }
+      if (n.tagName === 'TEMPLATE' && n.hasAttribute('data-if')) {
+        if (lookup(n.getAttribute('data-if'), scopes)) build(n.content, scopes, out);
+        return;
+      }
+      var el = document.createElement(n.tagName.toLowerCase());
+      for (var a = 0; a < n.attributes.length; a++) {
+        var at = n.attributes[a];
+        if (at.name === 'data-on-click') {
+          var fn = lookup(at.value, scopes);
+          if (typeof fn === 'function') el.addEventListener('click', fn);
+          continue;
+        }
+        if (at.name === 'defaultvalue') { el.setAttribute('data-default', interp(at.value, scopes)); continue; }
+        el.setAttribute(at.name, interp(at.value, scopes));
+      }
+      build(n.tagName === 'TEMPLATE' ? n.content : n, scopes, el);
+      out.appendChild(el);
+    });
+  }
+
+  function render() {
+    queued = false;
+    var saved = {};
+    root.querySelectorAll('[data-key]').forEach(function (f) {
+      saved[f.getAttribute('data-key')] = f.type === 'checkbox' ? f.checked : f.value;
+    });
+    var vals = comp.renderVals();
+    var frag = document.createDocumentFragment();
+    build(tpl.content, [vals], frag);
+    frag.querySelectorAll('[data-default]').forEach(function (f) {
+      if (f.tagName === 'SELECT') f.value = f.getAttribute('data-default');
+      else f.value = f.getAttribute('data-default');
+    });
+    if (!first) frag.querySelectorAll('[data-key]').forEach(function (f) {
+      var k = f.getAttribute('data-key');
+      if (k in saved) { if (f.type === 'checkbox') f.checked = saved[k]; else f.value = saved[k]; }
+    });
+    root.replaceChildren(frag);
+    first = false;
+    if (window.DCAfterRender) window.DCAfterRender(root, comp);
+  }
+  function schedule() { if (!queued) { queued = true; Promise.resolve().then(render); } }
+
+  window.DCMount = function (Component) {
+    root = document.getElementById('app');
+    tpl = document.getElementById('tpl');
+    comp = new Component({});
+    render();
+  };
+})();
+</script>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    const DATA = /*DATA*/{"cats":[
+{"id":"shu","title":"Шу пуэр","sub":"Выдержанный тёмный пуэр из Юньнани: мягкий, сладкий, землистый. Хорошо идёт к кальяну и согревает.","items":[
+{"name":"Сяо То Ча","origin":"Юньнань · мини-точа","note":"Маленькие прессованные «гнёздышки». Мягкий, сладковатый, с нотами сухофруктов.","price":"990 ₽"},
+{"name":"Гун Тин","origin":"Мэнхай, Юньнань","note":"Пуэр из самых мелких почек. Бархатный, сладкий, с ореховыми и шоколадными нотами.","price":"1 190 ₽"},
+{"name":"Шу пуэр Мэнхай, 2015","origin":"Мэнхай, Юньнань · выдержка","note":"Классический выдержанный пуэр. Плотный, древесный, с долгим сладким послевкусием.","price":"1 290 ₽"},
+{"name":"Лао Ча Тоу","origin":"Юньнань","note":"«Старые чайные головы» — комочки листа. Карамельный, густой, выдерживает много заварок.","price":"1 390 ₽"},
+{"name":"Пуэр в мандарине","origin":"Синьхуэй, Гуандун · Чэнь Пи","note":"Шу пуэр, выдержанный в кожуре мандарина. Цитрусовая свежесть поверх мягкой сладости.","price":"1 490 ₽"}]},
+{"id":"sheng","title":"Шэн пуэр","sub":"Зелёный, «живой» пуэр. Яркий и бодрящий, с фруктовыми нотами и лёгкой горчинкой.","items":[
+{"name":"Шэн пуэр Иу, 2016","origin":"Иу, Юньнань","note":"Мягкий для шэна: медовый, цветочный, с нежной сладостью.","price":"1 490 ₽"},
+{"name":"Шэн пуэр Булан Шань, 2018","origin":"Булан Шань, Юньнань","note":"Мощный и терпкий, с быстрой сладостью после горчинки. Для ценителей.","price":"1 690 ₽"},
+{"name":"Гу Шу, древние деревья","origin":"Линцан, Юньнань","note":"Чай с деревьев, которым больше ста лет. Глубокий, маслянистый, очень долгое послевкусие.","price":"2 290 ₽"}]},
+{"id":"oolong","title":"Улуны Аньси и Тайваня","sub":"Свёрнутые в шарики улуны: от лёгких цветочных до сливочных и медовых.","items":[
+{"name":"Молочный улун","origin":"Тайвань · Най Сян Цзинь Сюань","note":"Сливочный, нежный, с ароматом молока и карамели. Самый любимый у гостей.","price":"1 090 ₽"},
+{"name":"Те Гуань Инь","origin":"Аньси, Фуцзянь","note":"«Железная Гуаньинь». Свежий цветочный аромат, сирень и орхидея.","price":"1 190 ₽"},
+{"name":"Дун Дин","origin":"Наньтоу, Тайвань","note":"Улун средней обжарки. Орехово-цветочный, с тёплым хлебным оттенком.","price":"1 490 ₽"},
+{"name":"Алишань","origin":"горы Алишань, Тайвань","note":"Высокогорный улун. Сливочный, цветочный, очень чистый вкус.","price":"1 690 ₽"},
+{"name":"Дун Фан Мэй Жэнь","origin":"Синьчжу, Тайвань · «Восточная красавица»","note":"Лист, покусанный цикадками, даёт медово-фруктовый аромат, как у спелого персика.","price":"1 990 ₽"}]},
+{"id":"yancha","title":"Утёсные улуны Уишаня","sub":"Сильно обжаренные улуны с утёсов Уишань: минеральные, глубокие, тёплые.","items":[
+{"name":"Шуй Сянь","origin":"Уишань, Фуцзянь","note":"«Водяная нарцисса». Мягкий, с нотами орхидеи и тёмного мёда.","price":"1 390 ₽"},
+{"name":"Да Хун Пао","origin":"Уишань, Фуцзянь · «Большой красный халат»","note":"Легендарный утёсный улун. Обжаренный, шоколадно-древесный, с минеральностью.","price":"1 490 ₽"},
+{"name":"Ци Лань","origin":"Уишань, Фуцзянь","note":"Яркий цветочный аромат орхидеи на фоне обжарки.","price":"1 590 ₽"},
+{"name":"Жоу Гуй","origin":"Уишань, Фуцзянь · «Корица»","note":"Пряный, с нотами корицы и спелых фруктов. Насыщенный и бодрящий.","price":"1 690 ₽"}]},
+{"id":"dancong","title":"Фэнхуан Дань Цун","sub":"Улуны с горы Фэнхуан, каждый — с узнаваемым природным ароматом.","items":[
+{"name":"Ми Лань Сян","origin":"Фэнхуан, Гуандун · «Медовая орхидея»","note":"Яркий медово-цветочный аромат и сочная сладость.","price":"1 690 ₽"},
+{"name":"Я Ши Сян","origin":"Фэнхуан, Гуандун","note":"Шуточное название, а вкус — гардения, жёлтые фрукты и долгий аромат.","price":"1 890 ₽"}]},
+{"id":"red","title":"Красные чаи","sub":"В Китае их называют красными, у нас — чёрными. Сладкие, тёплые, с нотами мёда и сухофруктов.","items":[
+{"name":"Дянь Хун","origin":"Юньнань","note":"Золотистые почки, мёд, сухофрукты и лёгкая перечная нота.","price":"1 090 ₽"},
+{"name":"Ци Мэнь Хун Ча","origin":"Цимэнь, Аньхой","note":"Один из самых известных красных чаёв. Винные и какао-ноты.","price":"1 290 ₽"},
+{"name":"Лапсанг Сушонг","origin":"Уишань, Фуцзянь · Чжэн Шань Сяо Чжун","note":"Копчёный на сосне. Аромат костра и сладость сушёного лонгана.","price":"1 290 ₽"},
+{"name":"Цзинь Ло","origin":"Юньнань · «Золотая улитка»","note":"Скрученные золотые почки. Медовый, хлебный, очень мягкий.","price":"1 390 ₽"},
+{"name":"Цзинь Цзюнь Мэй","origin":"Уишань, Фуцзянь · «Золотые брови»","note":"Только почки. Аромат мёда, печёного батата и цветов.","price":"1 890 ₽"}]},
+{"id":"green","title":"Зелёные чаи","sub":"Свежие и лёгкие, с ореховыми, цветочными и фруктовыми нотами.","items":[
+{"name":"Хуан Шань Мао Фэн","origin":"Хуаншань, Аньхой","note":"Нежный, с ароматом орхидеи и свежей зелени.","price":"1 090 ₽"},
+{"name":"Би Ло Чунь","origin":"Тайху, Цзянсу · «Изумрудные спирали»","note":"Тонкие спиральки. Свежий, фруктовый, с ароматом весенних цветов.","price":"1 190 ₽"},
+{"name":"Лун Цзин","origin":"Ханчжоу, Чжэцзян · «Колодец дракона»","note":"Плоский лист, ореховый и каштановый вкус. Самый известный зелёный чай Китая.","price":"1 290 ₽"},
+{"name":"Тай Пин Хоу Куй","origin":"Хуаншань, Аньхой","note":"Длинный плоский лист. Орхидея и мягкая сладость без горечи.","price":"1 590 ₽"}]},
+{"id":"white","title":"Белые чаи","sub":"Минимально обработанные чаи из Фудина: деликатные, медовые, цветочные.","items":[
+{"name":"Бай Му Дань","origin":"Фудин, Фуцзянь · «Белый пион»","note":"Почки с листьями. Фруктовый, медовый, с ароматом луговых цветов.","price":"1 190 ₽"},
+{"name":"Шоу Мэй, 2017","origin":"Фудин, Фуцзянь · выдержанный","note":"Выдержанный белый чай. Финики, сухофрукты и мягкая травяная сладость.","price":"1 290 ₽"},
+{"name":"Бай Хао Инь Чжэнь","origin":"Фудин, Фуцзянь · «Серебряные иглы»","note":"Только почки в серебристом пушке. Очень нежный, медово-цветочный.","price":"1 890 ₽"}]},
+{"id":"yellow","title":"Жёлтые чаи","sub":"Редкая категория: чай слегка томят, и он становится мягче и слаще зелёного.","items":[
+{"name":"Мэн Дин Хуан Я","origin":"гора Мэндин, Сычуань","note":"Жёлтые почки. Сладкий, кукурузный, бархатный.","price":"1 990 ₽"},
+{"name":"Цзюнь Шань Инь Чжэнь","origin":"остров Цзюньшань, Хунань","note":"Один из самых редких чаёв Китая. Тонкий, сладкий, с нотами каштана.","price":"2 490 ₽"}]},
+{"id":"dark","title":"Тёмные чаи (Хэй Ча)","sub":"Постферментированные чаи, родственники пуэра. Мягкие, землистые, прогревающие.","items":[
+{"name":"Фу Чжуань","origin":"Аньхуа, Хунань","note":"Кирпич с «золотыми цветами» полезной плесени. Хлебный, сладкий, грибной.","price":"1 190 ₽"},
+{"name":"Лю Бао","origin":"Учжоу, Гуанси","note":"Выдержанный тёмный чай. Древесный, землистый, с прохладным послевкусием.","price":"1 290 ₽"}]},
+{"id":"flower","title":"Цветочные","sub":"Чаи, ароматизированные живыми цветами, и цветы, которые заваривают сами по себе.","items":[
+{"name":"Хризантема Гун Цзюй","origin":"Хуаншань, Аньхой","note":"Мелкие бутоны хризантемы. Без кофеина, освежает и мягко успокаивает.","price":"890 ₽"},
+{"name":"Моли Хуа Ча","origin":"Фуцзянь · жасминовый","note":"Зелёный чай, выдержанный с цветками жасмина. Классика, которую любят все.","price":"990 ₽"},
+{"name":"Жасминовые жемчужины","origin":"Фуцзянь · Моли Лун Чжу","note":"Почки, скрученные в жемчужины. Раскрываются в чайнике, аромат очень яркий.","price":"1 290 ₽"}]},
+{"id":"japan","title":"Японские чаи","sub":"Пара японских чаёв в пару к нашей кухне.","items":[
+{"name":"Генмайча","origin":"Япония","note":"Зелёный чай с обжаренным рисом. Тёплый, хлебный, уютный.","price":"990 ₽"},
+{"name":"Сенча","origin":"Сидзуока, Япония","note":"Яркий травяной вкус, свежесть и лёгкая умами.","price":"990 ₽"},
+{"name":"Матча","origin":"Удзи, Япония · порция","note":"Взбиваем венчиком на воде или на молоке на выбор.","price":"690 ₽"}]},
+{"id":"herbal","title":"Без кофеина","sub":"Для позднего вечера или тех, кто не пьёт чай с кофеином.","items":[
+{"name":"Ку Цяо","origin":"Сычуань · гречишный","note":"Обжаренная татарская гречиха. Хлебный, ореховый, без кофеина.","price":"790 ₽"},
+{"name":"Иван-чай","origin":"Россия","note":"Ферментированный кипрей. Мягкий, с медовыми и фруктовыми нотами.","price":"790 ₽"},
+{"name":"Ройбуш","origin":"ЮАР","note":"Сладкий, ванильно-ореховый, без кофеина.","price":"790 ₽"}]},
+{"id":"signature","title":"Авторские чаи","sub":"Яркие фруктовые и пряные чаи. Подаём в чайнике 1 л.","items":[
+{"name":"Масала","origin":"на молоке · 600 мл","note":"Чёрный чай с кардамоном, корицей, имбирём и гвоздикой.","price":"890 ₽"},
+{"name":"Облепиха и маракуйя","origin":"1 л","note":"Кисло-сладкий, яркий, согревающий.","price":"990 ₽"},
+{"name":"Малина и мята","origin":"1 л","note":"Ягодный, свежий, с мятной прохладой.","price":"990 ₽"},
+{"name":"Имбирь, лимон, мёд","origin":"1 л","note":"Пряный и согревающий, с медовой сладостью.","price":"990 ₽"}]}
+]}/*END*/;
+    return { accent: this.props.accent ?? '#B394FF', cats: DATA.cats };
+  }
+}
+
+
+DCMount(Component);</script>
+</body>
+</html>
