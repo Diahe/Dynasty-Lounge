@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барная карта — Dynasty Lounge</title>
+<meta name="description" content="Барная карта Dynasty Lounge: шампанское и вино, коллекционный виски, коньяк, текила, ром, сакэ и авторские коктейли.">
+<meta name="theme-color" content="#08060C">
+<meta property="og:title" content="Барная карта — Dynasty Lounge">
+<meta property="og:description" content="Барная карта Dynasty Lounge: шампанское и вино, коллекционный виски, коньяк, текила, ром, сакэ и авторские коктейли.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308060C'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23B394FF'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#08060C;--bg2:#100A19;--card:#150E21;--line:#261C36;--line2:#3D2E55;--text:#F1EDF7;--muted:#C9C0D9;--soft:#B1A6C4;--dim:#9488A8;--accent:#B394FF;--accent-hi:#CDB8FF;--deep:#6D3FE0;--accent-ink:#12091F;--serif:'Cormorant Garamond',Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,sans-serif;font-size:17px;line-height:1.65}
+a{color:var(--accent)}a:hover{color:var(--accent-hi)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:24px;padding-right:24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.kicker{display:flex;align-items:center;gap:14px;margin:0 0 20px;font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+.kicker::after{content:"";width:48px;height:1px;background:var(--deep)}
+h2{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.5vw,68px);line-height:1.02;letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--accent)}
+.band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:17px 30px;border-radius:4px;border:0;font:inherit;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;min-height:52px}
+.btn:hover{background:var(--accent-hi);color:var(--accent-ink)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line2);background:transparent;color:var(--text);text-decoration:none;font:inherit;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:17px 30px;border-radius:4px;min-height:52px}
+.btn-ghost:hover{border-color:var(--accent);color:var(--text)}
+
+.lang{display:inline-grid;place-content:center;min-width:44px;min-height:44px;padding:0 10px;border:1px solid var(--line2);border-radius:4px;color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.14em}
+.lang:hover{border-color:var(--accent);color:var(--text)}
+
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:var(--text)}
+.logo b{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:.32em}
+.logo span{margin-top:5px;font-size:10px;font-weight:500;letter-spacing:.62em;text-transform:uppercase;color:var(--accent)}
+.logo:hover{color:var(--text)}
+body{background:radial-gradient(60% 40% at 80% 0%,rgba(109,63,224,.32),transparent 70%) no-repeat,var(--bg)}
+.ptop{padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.ptop .links{display:flex;flex-wrap:wrap;gap:10px}
+.ptop .btn,.ptop .btn-ghost{min-height:44px;padding:11px 18px;font-size:13px}
+.phero{padding-top:48px;padding-bottom:32px}
+h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(52px,9vw,112px);line-height:.95;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{margin:28px 0 0;max-width:620px;font-size:19px;color:var(--muted)}
+.gongfu{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding:22px 26px;border:1px solid var(--deep);border-radius:18px;background:var(--card);max-width:820px}
+.gongfu .hz{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1;color:var(--accent)}
+.gongfu .tx{flex:1 1 320px;color:var(--muted)}.gongfu .tx b{color:var(--text)}
+.gongfu .pr{white-space:nowrap;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--accent)}
+.cnav{position:sticky;top:0;z-index:40;background:rgba(8,6,12,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.cnav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.cnav .wrap::-webkit-scrollbar{display:none}
+.cnav a{flex:none;border:1px solid var(--line2);border-radius:999px;padding:9px 16px;font-size:14px;color:var(--muted);text-decoration:none;background:var(--card);white-space:nowrap}
+.cnav a:hover,.cnav a.on{border-color:var(--accent);color:var(--text);background:#24163D}
+.cat{padding-top:72px;padding-bottom:8px;scroll-margin-top:72px}
+.cat-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:1px solid var(--line2);padding-bottom:18px}
+.cat-head h2{font-size:clamp(36px,4.6vw,56px);line-height:1.05}
+.cat-head p{margin:0;max-width:520px;color:var(--soft)}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));column-gap:64px}
+.it{padding:22px 0;border-bottom:1px solid var(--line)}
+.it-top{display:flex;align-items:baseline;gap:12px}
+.it-top b{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.2}
+.it-top i{flex:1;min-width:24px;border-bottom:1px dotted var(--line2);transform:translateY(-6px)}
+.it-top .pr{white-space:nowrap;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--accent)}
+.it .meta{margin-top:2px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.it .tag{font-size:11px;letter-spacing:.12em;color:var(--accent-ink);background:var(--accent);border-radius:999px;padding:2px 9px;font-weight:700}
+.it p{margin:6px 0 0;color:var(--muted);font-size:16px}
+.pfoot{margin-top:72px;border-top:1px solid var(--line)}
+.pfoot .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:var(--dim)}
+.pfoot a{color:var(--dim)}.pfoot a:hover{color:var(--accent)}
+.mbar{display:none}
+@media (max-width:720px){
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(8,6,12,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line2)}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);color:var(--text)}
+ .mbar a.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<div class="wrap ptop">
+<a class="logo" href="./" aria-label="Dynasty Lounge — на главную"><b>DYNASTY</b><span>Lounge</span></a>
+<div class="links"><a class="btn-ghost" href="en/bar.html" hreflang="en" lang="en">EN</a><a class="btn-ghost" href="menu.html">Кухня</a><a class="btn" href="./#booking">Забронировать</a></div>
+</div>
+<header class="wrap phero">
+<p class="kicker">Dynasty Lounge</p>
+<h1>Барная <em>карта</em></h1>
+<p class="lead">Шампанское и вино, коллекционный виски, коньяк, текила и ром, большой выбор японского: виски, сакэ, сётю и пиво. И авторские коктейли к кальяну.</p>
+<p class="lead" style="font-size:15px;color:var(--dim);margin-top:16px">Алкоголь оплачивается отдельно и не входит в депозит VIP rooms и Premium room. Продаём только гостям старше 18 лет.</p>
+</header>
+<nav class="cnav" aria-label="Разделы"><div class="wrap"><a href="#sparkling">Шампанское и игристое</a><a href="#wine">Вино</a><a href="#whisky">Виски</a><a href="#japanese-whisky">Японский виски</a><a href="#cognac">Коньяк и арманьяк</a><a href="#agave">Текила и мескаль</a><a href="#rum">Ром</a><a href="#vodka">Водка</a><a href="#gin">Джин</a><a href="#sake">Сакэ и сётю</a><a href="#liqueurs">Ликёры</a><a href="#beer">Японское пиво</a><a href="#cocktails">Коктейли</a></div></nav>
+<main>
+<section class="wrap cat" id="sparkling">
+<div class="cat-head"><h2>Шампанское и игристое</h2><p>Бокал 125 мл / бутылка 750 мл.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Абрау-Дюрсо Victor Dravigny Brut</b><i></i><span class="pr">850&nbsp;/&nbsp;4&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Россия · бокал / бутылка</span></div><p>Российское игристое классическим методом. Свежее, с нотами яблока и бриоши.</p></div>
+<div class="it"><div class="it-top"><b>Mionetto Prosecco Brut</b><i></i><span class="pr">950&nbsp;/&nbsp;5&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Италия · бокал / бутылка</span></div><p>Лёгкое и фруктовое, груша и цитрус.</p></div>
+<div class="it"><div class="it-top"><b>Moët &amp; Chandon Impérial Brut</b><i></i><span class="pr">1&nbsp;900&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Шампань · бокал / бутылка</span></div><p>Классика шампанского: зелёное яблоко, белые цветы, бриошь.</p></div>
+<div class="it"><div class="it-top"><b>Veuve Clicquot Brut</b><i></i><span class="pr">2&nbsp;200&nbsp;/&nbsp;16&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Шампань · бокал / бутылка</span><span class="tag">Хит</span></div><p>Плотное и насыщенное, с нотами выпечки и спелых фруктов.</p></div>
+<div class="it"><div class="it-top"><b>Ruinart Blanc de Blancs</b><i></i><span class="pr">29&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Шампань · бутылка</span></div><p>Только шардоне. Цитрус, жасмин, тонкая минеральность.</p></div>
+<div class="it"><div class="it-top"><b>Dom Pérignon</b><i></i><span class="pr">75&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Шампань · винтаж · бутылка</span></div><p>Легендарное винтажное шампанское для особого повода.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="wine">
+<div class="cat-head"><h2>Вино</h2><p>Бокал 150 мл / бутылка 750 мл.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Лефкадия Шардоне</b><i></i><span class="pr">1&nbsp;000&nbsp;/&nbsp;5&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Россия, Кубань · бокал / бутылка</span></div><p>Сливочное, с нотами груши и ванили.</p></div>
+<div class="it"><div class="it-top"><b>Chablis, William Fèvre</b><i></i><span class="pr">1&nbsp;400&nbsp;/&nbsp;8&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Бургундия · бокал / бутылка</span></div><p>Сухое белое: цитрус, мел, устричная свежесть. Идеально к сашими.</p></div>
+<div class="it"><div class="it-top"><b>Sancerre</b><i></i><span class="pr">1&nbsp;500&nbsp;/&nbsp;8&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Луара · бокал / бутылка</span></div><p>Совиньон блан: крыжовник, цитрус, свежая трава.</p></div>
+<div class="it"><div class="it-top"><b>Bourgogne Pinot Noir</b><i></i><span class="pr">1&nbsp;500&nbsp;/&nbsp;8&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Бургундия · бокал / бутылка</span></div><p>Лёгкое красное: вишня, малина, лесные ягоды.</p></div>
+<div class="it"><div class="it-top"><b>Châteauneuf-du-Pape</b><i></i><span class="pr">14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Долина Роны · бутылка</span></div><p>Насыщенное красное: тёмные ягоды, специи, прованские травы.</p></div>
+<div class="it"><div class="it-top"><b>Barolo</b><i></i><span class="pr">16&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Пьемонт · бутылка</span></div><p>Неббиоло: роза, вишня, табак и мощные танины.</p></div>
+<div class="it"><div class="it-top"><b>Grace Koshu</b><i></i><span class="pr">1&nbsp;600&nbsp;/&nbsp;9&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Япония, Яманаси · бокал / бутылка</span><span class="tag">Новинка</span></div><p>Японский белый сорт косю: юдзу, белый персик, лёгкость. Отлично к сашими.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="whisky">
+<div class="cat-head"><h2>Виски</h2><p>Порция 40 мл / бутылка 0,7 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Glenfiddich 15</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Спейсайд · односолодовый</span></div><p>Мёд, сухофрукты, мягкий хересный оттенок.</p></div>
+<div class="it"><div class="it-top"><b>The Macallan 12 Double Cask</b><i></i><span class="pr">1&nbsp;300&nbsp;/&nbsp;19&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Спейсайд · односолодовый</span><span class="tag">Хит</span></div><p>Хересные и американские бочки: ваниль, карамель, сухофрукты.</p></div>
+<div class="it"><div class="it-top"><b>Lagavulin 16</b><i></i><span class="pr">1&nbsp;400&nbsp;/&nbsp;21&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Айла · односолодовый</span></div><p>Мощный торф, дым, морская соль.</p></div>
+<div class="it"><div class="it-top"><b>Johnnie Walker Blue Label</b><i></i><span class="pr">2&nbsp;900&nbsp;/&nbsp;43&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Шотландия · купаж</span></div><p>Шёлковый, многослойный, с лёгким дымом.</p></div>
+<div class="it"><div class="it-top"><b>The Macallan 18 Sherry Oak</b><i></i><span class="pr">5&nbsp;900&nbsp;/&nbsp;88&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Спейсайд · односолодовый</span></div><p>Глубокий хересный: имбирь, сухофрукты, тёмный шоколад.</p></div>
+<div class="it"><div class="it-top"><b>Woodford Reserve</b><i></i><span class="pr">850&nbsp;/&nbsp;13&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Бурбон · США</span></div><p>Карамель, ваниль, корица. Основа нашего олд фэшн.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="japanese-whisky">
+<div class="cat-head"><h2>Японский виски</h2><p>Порция 40 мл / бутылка 0,7 л, если не указано иное.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Nikka from the Barrel</b><i></i><span class="pr">1&nbsp;100&nbsp;/&nbsp;12&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Купаж · бутылка 0,5 л</span></div><p>Плотный и пряный, ваниль и сухофрукты.</p></div>
+<div class="it"><div class="it-top"><b>Hibiki Japanese Harmony</b><i></i><span class="pr">1&nbsp;600&nbsp;/&nbsp;24&nbsp;000&nbsp;₽</span></div><div class="meta"><span>купаж</span></div><p>Мягкий и цветочный, мёд, апельсин, белый шоколад.</p></div>
+<div class="it"><div class="it-top"><b>Yamazaki 12</b><i></i><span class="pr">3&nbsp;300&nbsp;/&nbsp;49&nbsp;500&nbsp;₽</span></div><div class="meta"><span>односолодовый</span></div><p>Тропические фрукты, мидзунара, кокос.</p></div>
+<div class="it"><div class="it-top"><b>Suntory Toki</b><i></i><span class="pr">750&nbsp;/&nbsp;11&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Купаж</span></div><p>Лёгкий и свежий: зелёное яблоко, мёд, белый перец. Лучший виски для хайбола.</p></div>
+<div class="it"><div class="it-top"><b>Chita</b><i></i><span class="pr">1&nbsp;000&nbsp;/&nbsp;15&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Зерновой</span></div><p>Мягкий и сладкий: мёд, ваниль, мята. Японская лёгкость.</p></div>
+<div class="it"><div class="it-top"><b>Nikka Coffey Grain</b><i></i><span class="pr">1&nbsp;100&nbsp;/&nbsp;16&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Зерновой</span></div><p>Кукуруза, ваниль, тропические фрукты. Перегонка в колонне Коффи.</p></div>
+<div class="it"><div class="it-top"><b>Nikka Taketsuru Pure Malt</b><i></i><span class="pr">1&nbsp;200&nbsp;/&nbsp;18&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Солодовый купаж</span></div><p>Фрукты, солод, лёгкий торфяной дымок.</p></div>
+<div class="it"><div class="it-top"><b>Hakushu 12</b><i></i><span class="pr">3&nbsp;300&nbsp;/&nbsp;49&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Односолодовый</span><span class="tag">Новинка</span></div><p>«Лесной» виски: зелёное яблоко, мята, лёгкий дым.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="cognac">
+<div class="cat-head"><h2>Коньяк и арманьяк</h2><p>Порция 40 мл / бутылка 0,7 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Hennessy XO</b><i></i><span class="pr">2&nbsp;400&nbsp;/&nbsp;36&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Коньяк</span><span class="tag">Хит</span></div><p>Насыщенный и пряный: тёмный шоколад, перец, сухофрукты.</p></div>
+<div class="it"><div class="it-top"><b>Rémy Martin XO</b><i></i><span class="pr">2&nbsp;400&nbsp;/&nbsp;36&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Коньяк · Fine Champagne</span></div><p>Инжир, жасмин, корица, долгое послевкусие.</p></div>
+<div class="it"><div class="it-top"><b>Martell Cordon Bleu</b><i></i><span class="pr">2&nbsp;200&nbsp;/&nbsp;33&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Коньяк</span></div><p>Фруктовый и ореховый, нота засахаренного апельсина.</p></div>
+<div class="it"><div class="it-top"><b>Darroze Les Grands Assemblages 20 ans</b><i></i><span class="pr">1&nbsp;700&nbsp;/&nbsp;25&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Арманьяк</span></div><p>Чернослив, кожа, ваниль. Для любителей выдержанного.</p></div>
+<div class="it"><div class="it-top"><b>Courvoisier XO</b><i></i><span class="pr">2&nbsp;300&nbsp;/&nbsp;34&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Коньяк</span></div><p>Крем-брюле, апельсин, ирис.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="agave">
+<div class="cat-head"><h2>Текила и мескаль</h2><p>Порция 40 мл / бутылка 0,7 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Patrón Silver</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Текила · бланко</span></div><p>Чистая агава, цитрус и перец.</p></div>
+<div class="it"><div class="it-top"><b>Del Maguey Vida</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Мескаль</span></div><p>Дымный, с нотами печёной агавы и тропических фруктов.</p></div>
+<div class="it"><div class="it-top"><b>Don Julio 1942</b><i></i><span class="pr">2&nbsp;300&nbsp;/&nbsp;34&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Текила · аньехо</span></div><p>Карамель, ваниль, шоколад — текила для медленного вечера.</p></div>
+<div class="it"><div class="it-top"><b>Clase Azul Reposado</b><i></i><span class="pr">2&nbsp;900&nbsp;/&nbsp;43&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Текила · репосадо</span></div><p>Мягкая и сливочная, в знаменитом керамическом графине.</p></div>
+<div class="it"><div class="it-top"><b>Casamigos Reposado</b><i></i><span class="pr">1&nbsp;300&nbsp;/&nbsp;19&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Текила · репосадо</span></div><p>Карамель, ваниль и мягкий дуб.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="rum">
+<div class="cat-head"><h2>Ром</h2><p>Порция 40 мл / бутылка 0,7 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Diplomático Reserva Exclusiva</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Венесуэла</span></div><p>Ирис, апельсиновая цедра, ваниль.</p></div>
+<div class="it"><div class="it-top"><b>Zacapa 23</b><i></i><span class="pr">1&nbsp;100&nbsp;/&nbsp;16&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Гватемала</span></div><p>Мёд, сухофрукты, дуб. Мягкий и сладкий.</p></div>
+<div class="it"><div class="it-top"><b>Zacapa XO</b><i></i><span class="pr">2&nbsp;300&nbsp;/&nbsp;34&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Гватемала</span></div><p>Выдержанный в бочках из-под коньяка: шоколад, специи, кофе.</p></div>
+<div class="it"><div class="it-top"><b>Plantation XO 20th Anniversary</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Барбадос</span></div><p>Кокос, ваниль, тропические фрукты.</p></div>
+<div class="it"><div class="it-top"><b>Ryoma 7 лет</b><i></i><span class="pr">900&nbsp;/&nbsp;13&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Япония</span><span class="tag">Новинка</span></div><p>Японский ром из сахарного тростника: мёд, дуб, специи.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="vodka">
+<div class="cat-head"><h2>Водка</h2><p>Порция 40 мл / бутылка 0,7 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Belvedere</b><i></i><span class="pr">650&nbsp;/&nbsp;10&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Польша</span></div><p>Ржаная, мягкая, с лёгкой сливочностью.</p></div>
+<div class="it"><div class="it-top"><b>Grey Goose</b><i></i><span class="pr">650&nbsp;/&nbsp;10&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Франция</span></div><p>Пшеничная, чистая и гладкая.</p></div>
+<div class="it"><div class="it-top"><b>Mamont</b><i></i><span class="pr">650&nbsp;/&nbsp;10&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Россия, Сибирь</span></div><p>Сибирская водка на мягкой воде, в бутылке в форме бивня мамонта. Чистая, с лёгкой зерновой сладостью.</p></div>
+<div class="it"><div class="it-top"><b>Beluga Gold Line</b><i></i><span class="pr">900&nbsp;/&nbsp;13&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Россия</span></div><p>Выдержанная, бархатистая. Подаём охлаждённой.</p></div>
+<div class="it"><div class="it-top"><b>Absolut Elyx</b><i></i><span class="pr">700&nbsp;/&nbsp;10&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Швеция</span></div><p>Однокупажная, шелковистая, подаём в медном стакане.</p></div>
+<div class="it"><div class="it-top"><b>Haku</b><i></i><span class="pr">700&nbsp;/&nbsp;10&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Япония · Suntory</span><span class="tag">Новинка</span></div><p>Рисовая водка, фильтрованная через бамбуковый уголь. Мягкая и сладковатая.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="gin">
+<div class="cat-head"><h2>Джин</h2><p>Порция 40 мл / бутылка 0,7 л. Джин-тоник — +350 ₽ к цене порции.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Bombay Sapphire</b><i></i><span class="pr">650&nbsp;/&nbsp;10&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Англия</span></div><p>Лёгкий и цветочный, 10 ботаников: можжевельник, цитрус, специи.</p></div>
+<div class="it"><div class="it-top"><b>Tanqueray No. Ten</b><i></i><span class="pr">800&nbsp;/&nbsp;12&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Англия</span></div><p>Свежий грейпфрут, лайм и ромашка. Классика для мартини.</p></div>
+<div class="it"><div class="it-top"><b>Hendrick’s</b><i></i><span class="pr">750&nbsp;/&nbsp;11&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Шотландия</span></div><p>Огурец и роза, мягкий и освежающий.</p></div>
+<div class="it"><div class="it-top"><b>Roku</b><i></i><span class="pr">800&nbsp;/&nbsp;12&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Япония</span><span class="tag">Новинка</span></div><p>Японские ботаники: юдзу, сакура, чай сэнча. Идеален к нашей кухне.</p></div>
+<div class="it"><div class="it-top"><b>Gin Mare</b><i></i><span class="pr">900&nbsp;/&nbsp;13&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Испания</span></div><p>Средиземноморский: оливка, розмарин, базилик, тимьян.</p></div>
+<div class="it"><div class="it-top"><b>Monkey 47</b><i></i><span class="pr">1&nbsp;100&nbsp;/&nbsp;12&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Германия · бутылка 0,5 л</span></div><p>47 ботаников, хвоя, цитрус, специи.</p></div>
+<div class="it"><div class="it-top"><b>Ki No Bi</b><i></i><span class="pr">1&nbsp;100&nbsp;/&nbsp;16&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Япония · Киото</span></div><p>Киотский джин на рисовом спирте: юдзу, гёкуро, японский перец.</p></div>
+<div class="it"><div class="it-top"><b>Nikka Coffey Gin</b><i></i><span class="pr">950&nbsp;/&nbsp;14&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Япония</span></div><p>Японские цитрусы и яблоко, мягкий и яркий.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="sake">
+<div class="cat-head"><h2>Сакэ и сётю</h2><p>Японские рисовые и ячменные напитки к нашей кухне.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Hakkaisan Junmai Ginjo</b><i></i><span class="pr">1&nbsp;800&nbsp;/&nbsp;8&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Сакэ · 180 мл / 720 мл</span></div><p>Сухое и чистое, лёгкие фруктовые ноты.</p></div>
+<div class="it"><div class="it-top"><b>Dassai 45</b><i></i><span class="pr">2&nbsp;000&nbsp;/&nbsp;9&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span></div><p>Дыня, груша, белые цветы. Одно из самых известных сакэ Японии.</p></div>
+<div class="it"><div class="it-top"><b>Gekkeikan</b><i></i><span class="pr">900&nbsp;/&nbsp;4&nbsp;500&nbsp;₽</span></div><div class="meta"><span>Сакэ · 180 мл / 720 мл</span></div><p>Классическое сакэ, подаём тёплым или охлаждённым.</p></div>
+<div class="it"><div class="it-top"><b>Kubota Manju</b><i></i><span class="pr">2&nbsp;300&nbsp;/&nbsp;12&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span></div><p>Элегантное и сложное: дыня, рис, белые цветы.</p></div>
+<div class="it"><div class="it-top"><b>Dassai 23</b><i></i><span class="pr">3&nbsp;500&nbsp;/&nbsp;22&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Сакэ · Junmai Daiginjo · 180 мл / 720 мл</span><span class="tag">Новинка</span></div><p>Рис отполирован до 23%. Тонкое, фруктовое, бархатное. Флагман Dassai.</p></div>
+<div class="it"><div class="it-top"><b>Iichiko Silhouette</b><i></i><span class="pr">700&nbsp;/&nbsp;9&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Сётю · 60 мл / 720 мл</span></div><p>Ячменный сётю: мягкий, с нотами злаков и груши. Со льдом или с водой.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="liqueurs">
+<div class="cat-head"><h2>Ликёры</h2><p>Порция 40 мл / бутылка 0,7 л. Умэсю — 100 мл / 0,75 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Choya Umeshu</b><i></i><span class="pr">900&nbsp;/&nbsp;6&nbsp;900&nbsp;₽</span></div><div class="meta"><span>Сливовое вино · 100 мл / 0,75 л</span></div><p>Сладкое, с ароматом японской сливы умэ. Подаём со льдом.</p></div>
+<div class="it"><div class="it-top"><b>Midori</b><i></i><span class="pr">600&nbsp;/&nbsp;9&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Дынный ликёр · Япония</span></div><p>Яркий японский дынный ликёр, основа мидори сауэр.</p></div>
+<div class="it"><div class="it-top"><b>Baileys</b><i></i><span class="pr">550&nbsp;/&nbsp;8&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Сливочный ликёр · Ирландия</span></div><p>Сливки, ирландский виски, шоколад.</p></div>
+<div class="it"><div class="it-top"><b>Disaronno</b><i></i><span class="pr">600&nbsp;/&nbsp;9&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Амаретто · Италия</span></div><p>Миндаль и марципан.</p></div>
+<div class="it"><div class="it-top"><b>Limoncello</b><i></i><span class="pr">550&nbsp;/&nbsp;8&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Италия</span></div><p>Охлаждённый лимонный ликёр.</p></div>
+<div class="it"><div class="it-top"><b>Jägermeister</b><i></i><span class="pr">550&nbsp;/&nbsp;8&nbsp;000&nbsp;₽</span></div><div class="meta"><span>Травяной ликёр · Германия</span></div><p>56 трав и специй. Подаём ледяным.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="beer">
+<div class="cat-head"><h2>Японское пиво</h2><p>Охлаждённое, в бутылке.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Asahi Super Dry</b><i></i><span class="pr">590&nbsp;₽</span></div><div class="meta"><span>Япония · 0,33 л</span></div><p>Японское светлое, сухое и освежающее.</p></div>
+<div class="it"><div class="it-top"><b>Sapporo Premium</b><i></i><span class="pr">690&nbsp;₽</span></div><div class="meta"><span>Япония · 0,5 л</span></div><p>Мягкое японское светлое пиво.</p></div>
+<div class="it"><div class="it-top"><b>Kirin Ichiban</b><i></i><span class="pr">590&nbsp;₽</span></div><div class="meta"><span>Япония · 0,33 л</span></div><p>Пиво «первого отжима»: чистое и солодовое.</p></div>
+<div class="it"><div class="it-top"><b>Hitachino Nest White Ale</b><i></i><span class="pr">890&nbsp;₽</span></div><div class="meta"><span>Япония · 0,33 л</span><span class="tag">Новинка</span></div><p>Японский крафт: кориандр, апельсин, мускатный орех.</p></div>
+<div class="it"><div class="it-top"><b>Asahi Super Dry 0.0</b><i></i><span class="pr">490&nbsp;₽</span></div><div class="meta"><span>Безалкогольное · 0,33 л</span></div><p>Вкус Asahi без алкоголя.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="cocktails">
+<div class="cat-head"><h2>Коктейли</h2><p>Классика и авторские коктейли нашего бара.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Aperol Spritz</b><i></i><span class="pr">1&nbsp;000&nbsp;₽</span></div><div class="meta"><span>200 мл</span></div><p>Апероль, просекко, содовая, апельсин.</p></div>
+<div class="it"><div class="it-top"><b>Маргарита</b><i></i><span class="pr">1&nbsp;100&nbsp;₽</span></div><div class="meta"><span>150 мл</span></div><p>Текила, ликёр трипл-сек, лайм, соль.</p></div>
+<div class="it"><div class="it-top"><b>Эспрессо мартини</b><i></i><span class="pr">1&nbsp;100&nbsp;₽</span></div><div class="meta"><span>120 мл</span></div><p>Водка, кофейный ликёр, свежий эспрессо.</p></div>
+<div class="it"><div class="it-top"><b>Негрони</b><i></i><span class="pr">1&nbsp;200&nbsp;₽</span></div><div class="meta"><span>90 мл</span></div><p>Джин, Кампари, красный вермут.</p></div>
+<div class="it"><div class="it-top"><b>Олд фэшн</b><i></i><span class="pr">1&nbsp;300&nbsp;₽</span></div><div class="meta"><span>90 мл</span></div><p>Бурбон, биттер, апельсиновая цедра.</p></div>
+<div class="it"><div class="it-top"><b>Dynasty</b><i></i><span class="pr">1&nbsp;400&nbsp;₽</span></div><div class="meta"><span>Авторский · 150 мл</span><span class="tag">Хит</span></div><p>Джин, юдзу, лавандовый сироп, игристое. Фиолетовый, как наш логотип.</p></div>
+<div class="it"><div class="it-top"><b>Пурпурный дым</b><i></i><span class="pr">1&nbsp;400&nbsp;₽</span></div><div class="meta"><span>Авторский · 120 мл</span></div><p>Мескаль, ежевика, лайм, дымная пенка.</p></div>
+<div class="it"><div class="it-top"><b>Японский хайбол</b><i></i><span class="pr">1&nbsp;000&nbsp;₽</span></div><div class="meta"><span>200 мл</span></div><p>Suntory Toki, ледяная содовая, лимонная цедра. Как в барах Токио.</p></div>
+<div class="it"><div class="it-top"><b>Юдзу сауэр</b><i></i><span class="pr">1&nbsp;200&nbsp;₽</span></div><div class="meta"><span>120 мл</span></div><p>Японский виски, юдзу, мёд, белок.</p></div>
+<div class="it"><div class="it-top"><b>Мидори сауэр</b><i></i><span class="pr">1&nbsp;000&nbsp;₽</span></div><div class="meta"><span>150 мл</span></div><p>Дынный ликёр Midori, лимон, содовая.</p></div>
+</div>
+</section>
+</main>
+<footer class="pfoot"><div class="wrap"><span>Цены в рублях. Чрезмерное употребление алкоголя вредит вашему здоровью.</span><a href="./">← На главную</a></div></footer>
+<div class="mbar" aria-label="Быстрые действия">
+<a href="tel:+79099662116">Звонок</a>
+<a href="https://t.me/dynastylounge">Telegram</a>
+<a class="main" href="./#booking">Бронь</a>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.cnav a'));
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(x.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id);});
+        var on=document.querySelector('.cnav a.on'); if(on&&on.scrollIntoView){on.scrollIntoView({block:'nearest',inline:'center'});}
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  document.querySelectorAll('.cat').forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

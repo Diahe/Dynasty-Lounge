@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Чайная карта — Dynasty Lounge</title>
+<meta name="description" content="Чайная карта Dynasty Lounge: шу и шэн пуэры, утёсные и тайваньские улуны, красные, белые, жёлтые и зелёные чаи Китая.">
+<meta name="theme-color" content="#08060C">
+<meta property="og:title" content="Чайная карта — Dynasty Lounge">
+<meta property="og:description" content="Чайная карта Dynasty Lounge: шу и шэн пуэры, утёсные и тайваньские улуны, красные, белые, жёлтые и зелёные чаи Китая.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308060C'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23B394FF'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#08060C;--bg2:#100A19;--card:#150E21;--line:#261C36;--line2:#3D2E55;--text:#F1EDF7;--muted:#C9C0D9;--soft:#B1A6C4;--dim:#9488A8;--accent:#B394FF;--accent-hi:#CDB8FF;--deep:#6D3FE0;--accent-ink:#12091F;--serif:'Cormorant Garamond',Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,sans-serif;font-size:17px;line-height:1.65}
+a{color:var(--accent)}a:hover{color:var(--accent-hi)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:24px;padding-right:24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.kicker{display:flex;align-items:center;gap:14px;margin:0 0 20px;font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+.kicker::after{content:"";width:48px;height:1px;background:var(--deep)}
+h2{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.5vw,68px);line-height:1.02;letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--accent)}
+.band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:17px 30px;border-radius:4px;border:0;font:inherit;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;min-height:52px}
+.btn:hover{background:var(--accent-hi);color:var(--accent-ink)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line2);background:transparent;color:var(--text);text-decoration:none;font:inherit;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:17px 30px;border-radius:4px;min-height:52px}
+.btn-ghost:hover{border-color:var(--accent);color:var(--text)}
+
+.lang{display:inline-grid;place-content:center;min-width:44px;min-height:44px;padding:0 10px;border:1px solid var(--line2);border-radius:4px;color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.14em}
+.lang:hover{border-color:var(--accent);color:var(--text)}
+
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:var(--text)}
+.logo b{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:.32em}
+.logo span{margin-top:5px;font-size:10px;font-weight:500;letter-spacing:.62em;text-transform:uppercase;color:var(--accent)}
+.logo:hover{color:var(--text)}
+body{background:radial-gradient(60% 40% at 80% 0%,rgba(109,63,224,.32),transparent 70%) no-repeat,var(--bg)}
+.ptop{padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.ptop .links{display:flex;flex-wrap:wrap;gap:10px}
+.ptop .btn,.ptop .btn-ghost{min-height:44px;padding:11px 18px;font-size:13px}
+.phero{padding-top:48px;padding-bottom:32px}
+h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(52px,9vw,112px);line-height:.95;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{margin:28px 0 0;max-width:620px;font-size:19px;color:var(--muted)}
+.gongfu{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding:22px 26px;border:1px solid var(--deep);border-radius:18px;background:var(--card);max-width:820px}
+.gongfu .hz{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1;color:var(--accent)}
+.gongfu .tx{flex:1 1 320px;color:var(--muted)}.gongfu .tx b{color:var(--text)}
+.gongfu .pr{white-space:nowrap;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--accent)}
+.cnav{position:sticky;top:0;z-index:40;background:rgba(8,6,12,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.cnav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.cnav .wrap::-webkit-scrollbar{display:none}
+.cnav a{flex:none;border:1px solid var(--line2);border-radius:999px;padding:9px 16px;font-size:14px;color:var(--muted);text-decoration:none;background:var(--card);white-space:nowrap}
+.cnav a:hover,.cnav a.on{border-color:var(--accent);color:var(--text);background:#24163D}
+.cat{padding-top:72px;padding-bottom:8px;scroll-margin-top:72px}
+.cat-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;border-bottom:1px solid var(--line2);padding-bottom:18px}
+.cat-head h2{font-size:clamp(36px,4.6vw,56px);line-height:1.05}
+.cat-head p{margin:0;max-width:520px;color:var(--soft)}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));column-gap:64px}
+.it{padding:22px 0;border-bottom:1px solid var(--line)}
+.it-top{display:flex;align-items:baseline;gap:12px}
+.it-top b{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.2}
+.it-top i{flex:1;min-width:24px;border-bottom:1px dotted var(--line2);transform:translateY(-6px)}
+.it-top .pr{white-space:nowrap;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--accent)}
+.it .meta{margin-top:2px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.it .tag{font-size:11px;letter-spacing:.12em;color:var(--accent-ink);background:var(--accent);border-radius:999px;padding:2px 9px;font-weight:700}
+.it p{margin:6px 0 0;color:var(--muted);font-size:16px}
+.pfoot{margin-top:72px;border-top:1px solid var(--line)}
+.pfoot .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:var(--dim)}
+.pfoot a{color:var(--dim)}.pfoot a:hover{color:var(--accent)}
+.mbar{display:none}
+@media (max-width:720px){
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(8,6,12,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line2)}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);color:var(--text)}
+ .mbar a.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+ body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+<div class="wrap ptop">
+<a class="logo" href="./" aria-label="Dynasty Lounge — на главную"><b>DYNASTY</b><span>Lounge</span></a>
+<div class="links"><a class="btn-ghost" href="en/tea.html" hreflang="en" lang="en">EN</a><a class="btn-ghost" href="menu.html">Кухня</a><a class="btn" href="./#booking">Забронировать</a></div>
+</div>
+<header class="wrap phero">
+<p class="kicker">Dynasty Lounge</p>
+<h1>Чайная <em>карта</em></h1>
+<p class="lead">Пуэры, утёсные и тайваньские улуны, красные, белые, жёлтые и зелёные чаи из главных чайных провинций Китая. Каждый чай подаём в чайнике 600 мл.</p>
+<div class="gongfu"><span class="hz" aria-hidden="true">功夫茶</span><span class="tx"><b>Гунфу-ча.</b> Любой китайский чай можно заказать в гунфу-подаче: мастер заваривает его проливом в гайване прямо за вашим столом.</span><span class="pr">+&nbsp;500&nbsp;₽</span></div>
+</header>
+<nav class="cnav" aria-label="Разделы"><div class="wrap"><a href="#shu">Шу пуэр</a><a href="#sheng">Шэн пуэр</a><a href="#oolong">Улуны Аньси и Тайваня</a><a href="#yancha">Утёсные улуны Уишаня</a><a href="#dancong">Фэнхуан Дань Цун</a><a href="#red">Красные чаи</a><a href="#green">Зелёные чаи</a><a href="#white">Белые чаи</a><a href="#yellow">Жёлтые чаи</a><a href="#dark">Тёмные чаи (Хэй Ча)</a><a href="#flower">Цветочные</a><a href="#japan">Японские чаи</a><a href="#herbal">Без кофеина</a><a href="#signature">Авторские чаи</a></div></nav>
+<main>
+<section class="wrap cat" id="shu">
+<div class="cat-head"><h2>Шу пуэр</h2><p>Выдержанный тёмный пуэр из Юньнани: мягкий, сладкий, землистый. Хорошо идёт к кальяну и согревает.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Сяо То Ча</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>Юньнань · мини-точа</span></div><p>Маленькие прессованные «гнёздышки». Мягкий, сладковатый, с нотами сухофруктов.</p></div>
+<div class="it"><div class="it-top"><b>Гун Тин</b><i></i><span class="pr">1&nbsp;190&nbsp;₽</span></div><div class="meta"><span>Мэнхай, Юньнань</span></div><p>Пуэр из самых мелких почек. Бархатный, сладкий, с ореховыми и шоколадными нотами.</p></div>
+<div class="it"><div class="it-top"><b>Шу пуэр Мэнхай, 2015</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Мэнхай, Юньнань · выдержка</span></div><p>Классический выдержанный пуэр. Плотный, древесный, с долгим сладким послевкусием.</p></div>
+<div class="it"><div class="it-top"><b>Лао Ча Тоу</b><i></i><span class="pr">1&nbsp;390&nbsp;₽</span></div><div class="meta"><span>Юньнань</span></div><p>«Старые чайные головы» — комочки листа. Карамельный, густой, выдерживает много заварок.</p></div>
+<div class="it"><div class="it-top"><b>Пуэр в мандарине</b><i></i><span class="pr">1&nbsp;490&nbsp;₽</span></div><div class="meta"><span>Синьхуэй, Гуандун · Чэнь Пи</span></div><p>Шу пуэр, выдержанный в кожуре мандарина. Цитрусовая свежесть поверх мягкой сладости.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="sheng">
+<div class="cat-head"><h2>Шэн пуэр</h2><p>Зелёный, «живой» пуэр. Яркий и бодрящий, с фруктовыми нотами и лёгкой горчинкой.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Шэн пуэр Иу, 2016</b><i></i><span class="pr">1&nbsp;490&nbsp;₽</span></div><div class="meta"><span>Иу, Юньнань</span></div><p>Мягкий для шэна: медовый, цветочный, с нежной сладостью.</p></div>
+<div class="it"><div class="it-top"><b>Шэн пуэр Булан Шань, 2018</b><i></i><span class="pr">1&nbsp;690&nbsp;₽</span></div><div class="meta"><span>Булан Шань, Юньнань</span></div><p>Мощный и терпкий, с быстрой сладостью после горчинки. Для ценителей.</p></div>
+<div class="it"><div class="it-top"><b>Гу Шу, древние деревья</b><i></i><span class="pr">2&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Линцан, Юньнань</span></div><p>Чай с деревьев, которым больше ста лет. Глубокий, маслянистый, очень долгое послевкусие.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="oolong">
+<div class="cat-head"><h2>Улуны Аньси и Тайваня</h2><p>Свёрнутые в шарики улуны: от лёгких цветочных до сливочных и медовых.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Молочный улун</b><i></i><span class="pr">1&nbsp;090&nbsp;₽</span></div><div class="meta"><span>Тайвань · Най Сян Цзинь Сюань</span></div><p>Сливочный, нежный, с ароматом молока и карамели. Самый любимый у гостей.</p></div>
+<div class="it"><div class="it-top"><b>Те Гуань Инь</b><i></i><span class="pr">1&nbsp;190&nbsp;₽</span></div><div class="meta"><span>Аньси, Фуцзянь</span></div><p>«Железная Гуаньинь». Свежий цветочный аромат, сирень и орхидея.</p></div>
+<div class="it"><div class="it-top"><b>Дун Дин</b><i></i><span class="pr">1&nbsp;490&nbsp;₽</span></div><div class="meta"><span>Наньтоу, Тайвань</span></div><p>Улун средней обжарки. Орехово-цветочный, с тёплым хлебным оттенком.</p></div>
+<div class="it"><div class="it-top"><b>Алишань</b><i></i><span class="pr">1&nbsp;690&nbsp;₽</span></div><div class="meta"><span>горы Алишань, Тайвань</span></div><p>Высокогорный улун. Сливочный, цветочный, очень чистый вкус.</p></div>
+<div class="it"><div class="it-top"><b>Дун Фан Мэй Жэнь</b><i></i><span class="pr">1&nbsp;990&nbsp;₽</span></div><div class="meta"><span>Синьчжу, Тайвань · «Восточная красавица»</span></div><p>Лист, покусанный цикадками, даёт медово-фруктовый аромат, как у спелого персика.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="yancha">
+<div class="cat-head"><h2>Утёсные улуны Уишаня</h2><p>Сильно обжаренные улуны с утёсов Уишань: минеральные, глубокие, тёплые.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Шуй Сянь</b><i></i><span class="pr">1&nbsp;390&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь</span></div><p>«Водяная нарцисса». Мягкий, с нотами орхидеи и тёмного мёда.</p></div>
+<div class="it"><div class="it-top"><b>Да Хун Пао</b><i></i><span class="pr">1&nbsp;490&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь · «Большой красный халат»</span></div><p>Легендарный утёсный улун. Обжаренный, шоколадно-древесный, с минеральностью.</p></div>
+<div class="it"><div class="it-top"><b>Ци Лань</b><i></i><span class="pr">1&nbsp;590&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь</span></div><p>Яркий цветочный аромат орхидеи на фоне обжарки.</p></div>
+<div class="it"><div class="it-top"><b>Жоу Гуй</b><i></i><span class="pr">1&nbsp;690&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь · «Корица»</span></div><p>Пряный, с нотами корицы и спелых фруктов. Насыщенный и бодрящий.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="dancong">
+<div class="cat-head"><h2>Фэнхуан Дань Цун</h2><p>Улуны с горы Фэнхуан, каждый — с узнаваемым природным ароматом.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Ми Лань Сян</b><i></i><span class="pr">1&nbsp;690&nbsp;₽</span></div><div class="meta"><span>Фэнхуан, Гуандун · «Медовая орхидея»</span></div><p>Яркий медово-цветочный аромат и сочная сладость.</p></div>
+<div class="it"><div class="it-top"><b>Я Ши Сян</b><i></i><span class="pr">1&nbsp;890&nbsp;₽</span></div><div class="meta"><span>Фэнхуан, Гуандун</span></div><p>Шуточное название, а вкус — гардения, жёлтые фрукты и долгий аромат.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="red">
+<div class="cat-head"><h2>Красные чаи</h2><p>В Китае их называют красными, у нас — чёрными. Сладкие, тёплые, с нотами мёда и сухофруктов.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Дянь Хун</b><i></i><span class="pr">1&nbsp;090&nbsp;₽</span></div><div class="meta"><span>Юньнань</span></div><p>Золотистые почки, мёд, сухофрукты и лёгкая перечная нота.</p></div>
+<div class="it"><div class="it-top"><b>Ци Мэнь Хун Ча</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Цимэнь, Аньхой</span></div><p>Один из самых известных красных чаёв. Винные и какао-ноты.</p></div>
+<div class="it"><div class="it-top"><b>Лапсанг Сушонг</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь · Чжэн Шань Сяо Чжун</span></div><p>Копчёный на сосне. Аромат костра и сладость сушёного лонгана.</p></div>
+<div class="it"><div class="it-top"><b>Цзинь Ло</b><i></i><span class="pr">1&nbsp;390&nbsp;₽</span></div><div class="meta"><span>Юньнань · «Золотая улитка»</span></div><p>Скрученные золотые почки. Медовый, хлебный, очень мягкий.</p></div>
+<div class="it"><div class="it-top"><b>Цзинь Цзюнь Мэй</b><i></i><span class="pr">1&nbsp;890&nbsp;₽</span></div><div class="meta"><span>Уишань, Фуцзянь · «Золотые брови»</span></div><p>Только почки. Аромат мёда, печёного батата и цветов.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="green">
+<div class="cat-head"><h2>Зелёные чаи</h2><p>Свежие и лёгкие, с ореховыми, цветочными и фруктовыми нотами.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Хуан Шань Мао Фэн</b><i></i><span class="pr">1&nbsp;090&nbsp;₽</span></div><div class="meta"><span>Хуаншань, Аньхой</span></div><p>Нежный, с ароматом орхидеи и свежей зелени.</p></div>
+<div class="it"><div class="it-top"><b>Би Ло Чунь</b><i></i><span class="pr">1&nbsp;190&nbsp;₽</span></div><div class="meta"><span>Тайху, Цзянсу · «Изумрудные спирали»</span></div><p>Тонкие спиральки. Свежий, фруктовый, с ароматом весенних цветов.</p></div>
+<div class="it"><div class="it-top"><b>Лун Цзин</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Ханчжоу, Чжэцзян · «Колодец дракона»</span></div><p>Плоский лист, ореховый и каштановый вкус. Самый известный зелёный чай Китая.</p></div>
+<div class="it"><div class="it-top"><b>Тай Пин Хоу Куй</b><i></i><span class="pr">1&nbsp;590&nbsp;₽</span></div><div class="meta"><span>Хуаншань, Аньхой</span></div><p>Длинный плоский лист. Орхидея и мягкая сладость без горечи.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="white">
+<div class="cat-head"><h2>Белые чаи</h2><p>Минимально обработанные чаи из Фудина: деликатные, медовые, цветочные.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Бай Му Дань</b><i></i><span class="pr">1&nbsp;190&nbsp;₽</span></div><div class="meta"><span>Фудин, Фуцзянь · «Белый пион»</span></div><p>Почки с листьями. Фруктовый, медовый, с ароматом луговых цветов.</p></div>
+<div class="it"><div class="it-top"><b>Шоу Мэй, 2017</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Фудин, Фуцзянь · выдержанный</span></div><p>Выдержанный белый чай. Финики, сухофрукты и мягкая травяная сладость.</p></div>
+<div class="it"><div class="it-top"><b>Бай Хао Инь Чжэнь</b><i></i><span class="pr">1&nbsp;890&nbsp;₽</span></div><div class="meta"><span>Фудин, Фуцзянь · «Серебряные иглы»</span></div><p>Только почки в серебристом пушке. Очень нежный, медово-цветочный.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="yellow">
+<div class="cat-head"><h2>Жёлтые чаи</h2><p>Редкая категория: чай слегка томят, и он становится мягче и слаще зелёного.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Мэн Дин Хуан Я</b><i></i><span class="pr">1&nbsp;990&nbsp;₽</span></div><div class="meta"><span>гора Мэндин, Сычуань</span></div><p>Жёлтые почки. Сладкий, кукурузный, бархатный.</p></div>
+<div class="it"><div class="it-top"><b>Цзюнь Шань Инь Чжэнь</b><i></i><span class="pr">2&nbsp;490&nbsp;₽</span></div><div class="meta"><span>остров Цзюньшань, Хунань</span></div><p>Один из самых редких чаёв Китая. Тонкий, сладкий, с нотами каштана.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="dark">
+<div class="cat-head"><h2>Тёмные чаи (Хэй Ча)</h2><p>Постферментированные чаи, родственники пуэра. Мягкие, землистые, прогревающие.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Фу Чжуань</b><i></i><span class="pr">1&nbsp;190&nbsp;₽</span></div><div class="meta"><span>Аньхуа, Хунань</span></div><p>Кирпич с «золотыми цветами» полезной плесени. Хлебный, сладкий, грибной.</p></div>
+<div class="it"><div class="it-top"><b>Лю Бао</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Учжоу, Гуанси</span></div><p>Выдержанный тёмный чай. Древесный, землистый, с прохладным послевкусием.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="flower">
+<div class="cat-head"><h2>Цветочные</h2><p>Чаи, ароматизированные живыми цветами, и цветы, которые заваривают сами по себе.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Хризантема Гун Цзюй</b><i></i><span class="pr">890&nbsp;₽</span></div><div class="meta"><span>Хуаншань, Аньхой</span></div><p>Мелкие бутоны хризантемы. Без кофеина, освежает и мягко успокаивает.</p></div>
+<div class="it"><div class="it-top"><b>Моли Хуа Ча</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>Фуцзянь · жасминовый</span></div><p>Зелёный чай, выдержанный с цветками жасмина. Классика, которую любят все.</p></div>
+<div class="it"><div class="it-top"><b>Жасминовые жемчужины</b><i></i><span class="pr">1&nbsp;290&nbsp;₽</span></div><div class="meta"><span>Фуцзянь · Моли Лун Чжу</span></div><p>Почки, скрученные в жемчужины. Раскрываются в чайнике, аромат очень яркий.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="japan">
+<div class="cat-head"><h2>Японские чаи</h2><p>Пара японских чаёв в пару к нашей кухне.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Генмайча</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>Япония</span></div><p>Зелёный чай с обжаренным рисом. Тёплый, хлебный, уютный.</p></div>
+<div class="it"><div class="it-top"><b>Сенча</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>Сидзуока, Япония</span></div><p>Яркий травяной вкус, свежесть и лёгкая умами.</p></div>
+<div class="it"><div class="it-top"><b>Матча</b><i></i><span class="pr">690&nbsp;₽</span></div><div class="meta"><span>Удзи, Япония · порция</span></div><p>Взбиваем венчиком на воде или на молоке на выбор.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="herbal">
+<div class="cat-head"><h2>Без кофеина</h2><p>Для позднего вечера или тех, кто не пьёт чай с кофеином.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Ку Цяо</b><i></i><span class="pr">790&nbsp;₽</span></div><div class="meta"><span>Сычуань · гречишный</span></div><p>Обжаренная татарская гречиха. Хлебный, ореховый, без кофеина.</p></div>
+<div class="it"><div class="it-top"><b>Иван-чай</b><i></i><span class="pr">790&nbsp;₽</span></div><div class="meta"><span>Россия</span></div><p>Ферментированный кипрей. Мягкий, с медовыми и фруктовыми нотами.</p></div>
+<div class="it"><div class="it-top"><b>Ройбуш</b><i></i><span class="pr">790&nbsp;₽</span></div><div class="meta"><span>ЮАР</span></div><p>Сладкий, ванильно-ореховый, без кофеина.</p></div>
+</div>
+</section>
+<section class="wrap cat" id="signature">
+<div class="cat-head"><h2>Авторские чаи</h2><p>Яркие фруктовые и пряные чаи. Подаём в чайнике 1 л.</p></div>
+<div class="list">
+<div class="it"><div class="it-top"><b>Масала</b><i></i><span class="pr">890&nbsp;₽</span></div><div class="meta"><span>на молоке · 600 мл</span></div><p>Чёрный чай с кардамоном, корицей, имбирём и гвоздикой.</p></div>
+<div class="it"><div class="it-top"><b>Облепиха и маракуйя</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>1 л</span></div><p>Кисло-сладкий, яркий, согревающий.</p></div>
+<div class="it"><div class="it-top"><b>Малина и мята</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>1 л</span></div><p>Ягодный, свежий, с мятной прохладой.</p></div>
+<div class="it"><div class="it-top"><b>Имбирь, лимон, мёд</b><i></i><span class="pr">990&nbsp;₽</span></div><div class="meta"><span>1 л</span></div><p>Пряный и согревающий, с медовой сладостью.</p></div>
+</div>
+</section>
+</main>
+<footer class="pfoot"><div class="wrap"><span>Объём чайника — 600 мл, если не указано иное. Цены в рублях.</span><a href="./">← На главную</a></div></footer>
+<div class="mbar" aria-label="Быстрые действия">
+<a href="tel:+79099662116">Звонок</a>
+<a href="https://t.me/dynastylounge">Telegram</a>
+<a class="main" href="./#booking">Бронь</a>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.cnav a'));
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(x.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id);});
+        var on=document.querySelector('.cnav a.on'); if(on&&on.scrollIntoView){on.scrollIntoView({block:'nearest',inline:'center'});}
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  document.querySelectorAll('.cat').forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

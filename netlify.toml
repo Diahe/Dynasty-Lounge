@@ -1,0 +1,9 @@
+[build]
+  publish = "site"
+  functions = "netlify/functions"
+
+# Старый адрес меню кухни из первой версии сайта
+[[redirects]]
+  from = "/food.html"
+  to = "/menu.html"
+  status = 301
