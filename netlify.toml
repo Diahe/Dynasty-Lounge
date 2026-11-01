@@ -1,6 +1,16 @@
 [build]
   publish = "site"
   functions = "netlify/functions"
+  # Перед публикацией переносим шрифты Google к себе на сайт
+  command = "node tools/self-host-fonts.mjs"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 # Старый адрес меню кухни из первой версии сайта
 [[redirects]]

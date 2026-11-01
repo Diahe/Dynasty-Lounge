@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dynasty Lounge — hookah lounge in Moscow</title>
+<meta property="og:url" content="https://dynastylounge.netlify.app/en/">
+<meta property="og:site_name" content="Dynasty Lounge">
+<meta property="og:image" content="https://dynastylounge.netlify.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://dynastylounge.netlify.app/en/">
 <meta name="description" content="Dynasty Lounge — hookah lounge in Moscow. Open daily 12:00–06:00. Large and small halls, VIP rooms with PS5 and a Premium room with billiards. Booking: +7 909 966-21-16, Telegram @dynastylounge.">
 <meta name="theme-color" content="#08060C">
 <meta property="og:type" content="website">
@@ -15,8 +22,8 @@
 {"@context":"https://schema.org","@type":"BarOrPub","name":"Dynasty Lounge","description":"Hookah lounge in Moscow","telephone":"+7 909 966-21-16","email":"dynastylounge@bk.ru","priceRange":"₽₽₽","address":{"@type":"PostalAddress","addressLocality":"Moscow","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"06:00"}],"sameAs":["https://t.me/dynastyloungehookah"]}
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a deposit?", "acceptedAnswer": {"@type": "Answer", "text": "VIP rooms have a 15 000 ₽ deposit, the Premium room 30 000 ₽. The deposit covers your whole order — hookah, food, tea and drinks — except alcohol, which is paid separately. The large and small halls have no deposit."}}, {"@type": "Question", "name": "Can I bring my own alcohol?", "acceptedAnswer": {"@type": "Answer", "text": "No, outside alcohol is not allowed."}}, {"@type": "Question", "name": "Can I bring my pet?", "acceptedAnswer": {"@type": "Answer", "text": "Sorry, no — pets are not allowed."}}, {"@type": "Question", "name": "Can I vape inside?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, e-cigarettes and vapes are allowed indoors."}}, {"@type": "Question", "name": "What about regular cigarettes?", "acceptedAnswer": {"@type": "Answer", "text": "Regular cigarettes only on the terrace. They are not allowed indoors."}}, {"@type": "Question", "name": "What is the minimum age?", "acceptedAnswer": {"@type": "Answer", "text": "18+ only. We may ask for ID at the door."}}, {"@type": "Question", "name": "How do I book a table?", "acceptedAnswer": {"@type": "Answer", "text": "Fill in the form on this page — it goes straight to our manager. Or message @dynastylounge on Telegram, or call +7 909 966-21-16."}}, {"@type": "Question", "name": "What are your opening hours?", "acceptedAnswer": {"@type": "Answer", "text": "Daily from 12:00 to 06:00."}}]}</script>
-<link rel="alternate" hreflang="ru" href="../">
-<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="ru" href="https://dynastylounge.netlify.app/">
+<link rel="alternate" hreflang="en" href="https://dynastylounge.netlify.app/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
@@ -62,6 +69,11 @@ h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(56px,10vw,1
 .facts div:last-child{border-bottom:0}
 .facts span:first-child{color:var(--dim);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding-top:2px}
 .facts span:last-child{text-align:right}
+.facts .now{display:inline-flex;align-items:center;justify-content:flex-end;gap:9px;white-space:nowrap}
+.facts .now i{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none}
+.facts .now[data-open="1"] i{background:#7FD1A8;box-shadow:0 0 10px #7FD1A8}
+.facts .now[data-open="1"]{color:#A7E8C6}
+
 
 section.pad{padding-top:112px;padding-bottom:112px}
 
@@ -352,6 +364,7 @@ footer a{color:var(--dim)}footer a:hover{color:var(--accent)}
 </div>
 </div>
 <div class="facts">
+<div><span>Now</span><span class="now" id="open-now" data-lang="en" data-open="" aria-live="polite"><i aria-hidden="true"></i><span>12:00 – 06:00</span></span></div>
 <div><span>Daily</span><span>12:00 – 06:00</span></div>
 <div><span>Average bill</span><span>≈ 2&nbsp;500&nbsp;₽ excl. alcohol</span></div>
 <div><span>Telegram</span><span><a href="https://t.me/dynastylounge">@dynastylounge</a></span></div>
@@ -886,6 +899,23 @@ Message on Telegram</a>
     },{threshold:.12});
     items.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=(i%3)*90+'ms';io.observe(el);});
   }
+})();
+</script>
+<script>
+(function(){
+  var el=document.getElementById('open-now'); if(!el)return;
+  var L=el.getAttribute('data-lang')==='en'
+    ?{open:'Open until 06:00',soon:'Opens at 12:00'}
+    :{open:'Открыто до 06:00',soon:'Откроемся в 12:00'};
+  function tick(){
+    var h;
+    try{h=+new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())%24;}
+    catch(_){h=(new Date().getUTCHours()+3)%24;}
+    var open=h>=12||h<6;
+    el.setAttribute('data-open',open?'1':'0');
+    el.lastChild.textContent=open?L.open:L.soon;
+  }
+  tick(); setInterval(tick,60000);
 })();
 </script>
 </body>

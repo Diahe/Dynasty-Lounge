@@ -1,5 +1,16 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Dynasty Lounge</title>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynasty Lounge — кальянная в Москве</title>
+<meta property="og:url" content="https://dynastylounge.netlify.app/">
+<meta property="og:site_name" content="Dynasty Lounge">
+<meta property="og:image" content="https://dynastylounge.netlify.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://dynastylounge.netlify.app/">
 <meta name="description" content="Dynasty Lounge — кальянная в Москве. Ежедневно 12:00–06:00. Большой и малый залы, VIP rooms с PS5 и Premium room с бильярдом. Бронь: +7 909 966-21-16, Telegram @dynastylounge.">
 <meta name="theme-color" content="#08060C">
 <meta property="og:type" content="website">
@@ -11,8 +22,8 @@
 {"@context":"https://schema.org","@type":"BarOrPub","name":"Dynasty Lounge","description":"Кальянная в Москве","telephone":"+7 909 966-21-16","email":"dynastylounge@bk.ru","priceRange":"₽₽₽","address":{"@type":"PostalAddress","addressLocality":"Москва","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"06:00"}],"sameAs":["https://t.me/dynastyloungehookah"]}
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Есть ли депозит?", "acceptedAnswer": {"@type": "Answer", "text": "В VIP rooms депозит 15 000 ₽, в Premium room — 30 000 ₽. Депозит идёт в счёт всего заказа — кальянов, кухни, чая и напитков, — кроме алкоголя: алкоголь оплачивается отдельно. В большом и малом залах депозита нет."}}, {"@type": "Question", "name": "Можно прийти со своим алкоголем?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, приносить свой алкоголь нельзя."}}, {"@type": "Question", "name": "Можно прийти с животными?", "acceptedAnswer": {"@type": "Answer", "text": "К сожалению, нет — с животными нельзя."}}, {"@type": "Question", "name": "Можно курить электронные сигареты?", "acceptedAnswer": {"@type": "Answer", "text": "Да, электронные сигареты в помещении можно."}}, {"@type": "Question", "name": "А обычные сигареты?", "acceptedAnswer": {"@type": "Answer", "text": "Обычные сигареты — только на террасе. В помещении курить их нельзя."}}, {"@type": "Question", "name": "С какого возраста можно прийти?", "acceptedAnswer": {"@type": "Answer", "text": "Только с 18 лет. На входе можем попросить документ, удостоверяющий личность."}}, {"@type": "Question", "name": "Как забронировать стол?", "acceptedAnswer": {"@type": "Answer", "text": "Заполните форму на сайте — она соберёт готовое сообщение менеджеру. Или напишите в Telegram @dynastylounge, или позвоните: +7 909 966-21-16."}}, {"@type": "Question", "name": "Когда вы работаете?", "acceptedAnswer": {"@type": "Answer", "text": "Ежедневно с 12:00 до 06:00."}}]}</script>
-<link rel="alternate" hreflang="ru" href="./">
-<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="alternate" hreflang="ru" href="https://dynastylounge.netlify.app/">
+<link rel="alternate" hreflang="en" href="https://dynastylounge.netlify.app/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
@@ -58,6 +69,11 @@ h1{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(56px,10vw,1
 .facts div:last-child{border-bottom:0}
 .facts span:first-child{color:var(--dim);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding-top:2px}
 .facts span:last-child{text-align:right}
+.facts .now{display:inline-flex;align-items:center;justify-content:flex-end;gap:9px;white-space:nowrap}
+.facts .now i{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none}
+.facts .now[data-open="1"] i{background:#7FD1A8;box-shadow:0 0 10px #7FD1A8}
+.facts .now[data-open="1"]{color:#A7E8C6}
+
 
 section.pad{padding-top:112px;padding-bottom:112px}
 
@@ -300,7 +316,8 @@ footer a{color:var(--dim)}footer a:hover{color:var(--accent)}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.room,.navbar{transition:none}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
-
+</head>
+<body>
 <div class="navbar" id="navbar" aria-hidden="true">
 <div class="wrap">
 <a class="logo" href="#top" tabindex="-1"><b>DYNASTY</b><span>Lounge</span></a>
@@ -346,6 +363,7 @@ footer a{color:var(--dim)}footer a:hover{color:var(--accent)}
 </div>
 </div>
 <div class="facts">
+<div><span>Сейчас</span><span class="now" id="open-now" data-lang="ru" data-open="" aria-live="polite"><i aria-hidden="true"></i><span>12:00 – 06:00</span></span></div>
 <div><span>Ежедневно</span><span>12:00 – 06:00</span></div>
 <div><span>Средний чек</span><span>≈ 2&nbsp;500&nbsp;₽ без алкоголя</span></div>
 <div><span>Telegram</span><span><a href="https://t.me/dynastylounge">@dynastylounge</a></span></div>
@@ -882,6 +900,22 @@ footer a{color:var(--dim)}footer a:hover{color:var(--accent)}
   }
 })();
 </script>
-
-
-</body></html>
+<script>
+(function(){
+  var el=document.getElementById('open-now'); if(!el)return;
+  var L=el.getAttribute('data-lang')==='en'
+    ?{open:'Open until 06:00',soon:'Opens at 12:00'}
+    :{open:'Открыто до 06:00',soon:'Откроемся в 12:00'};
+  function tick(){
+    var h;
+    try{h=+new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())%24;}
+    catch(_){h=(new Date().getUTCHours()+3)%24;}
+    var open=h>=12||h<6;
+    el.setAttribute('data-open',open?'1':'0');
+    el.lastChild.textContent=open?L.open:L.soon;
+  }
+  tick(); setInterval(tick,60000);
+})();
+</script>
+</body>
+</html>
